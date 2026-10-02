@@ -1,0 +1,51 @@
+SYNTHETIC DEMONSTRATION MATTER — all people, providers, events, and amounts are fictional.
+Export date: 2026-10-02
+
+SECTION 1 — MATTER HEADER
+Matter number: DEMO-MAYA-004
+Client: Maya Torres - Slip and Fall
+Description: Maya Torres — grocery-store fall on a wet entrance floor, with disputed warning signs.
+Matter stage: Investigation
+Status: Open
+Responsible attorney: Avery Chen
+
+SECTION 2 — CUSTOM FIELDS
+Date of Incident
+  2026-09-05
+
+Case Summary
+  Maya slipped near the entrance of fictional Juniper Market after a rainstorm and injured her left ankle. She reports no warning sign was visible. The store says staff placed a cone nearby, but the security footage has not been supplied. She missed three shifts at her bakery job and is attending follow-up appointments.
+
+Treatment Status
+  Left ankle sprain treated with a brace; follow-up assessment pending.
+
+Medical Specials To Date
+  $1,850.00 recorded charges; payment status unknown.
+
+Policy Limits
+  Unknown
+
+SECTION 3 — CONTACTS
+CLIENT
+  Maya Torres - Slip and Fall — Fictional client
+
+MEDICAL PROVIDERS
+  Willow Walk Clinic — Fictional urgent-care provider
+    Email: records@willowwalk.example.invalid
+
+SECTION 4 — TASKS
+2026-10-05 — Obtain store surveillance footage and incident report
+    Request the entrance footage and cleaning log; the store has acknowledged the request but has not supplied records.
+    Assigned: Avery Chen | Status: Pending
+
+SECTION 5 — COMMUNICATIONS
+2026-09-25  Juniper Market > Avery Chen
+  Incident records — We received the preservation request. The manager is locating the entrance footage and inspection log.
+
+SECTION 6 — NOTES
+2026-09-28 — Treatment and work update
+  Maya reports left ankle pain improving with a brace but difficulty standing through a full shift. Wage documentation and the store's version of events remain unverified.
+
+SECTION 7 — CALENDAR EVENTS
+2026-10-05 10:00–10:30  Internal evidence review
+  Review whether the store supplied footage. This is a demo follow-up target, not a legal deadline.

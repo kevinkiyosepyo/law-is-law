@@ -1,0 +1,586 @@
+KEVIN PYO - CAR CRASH — SYNTHETIC DEMONSTRATION CASE FILE
+All people, organizations, communications, records, claim numbers, and events in this file are fictional. Kevin Pyo is a fictional demo character sharing a name with the requested test case; this file makes no statement about any real person's health, employment, or legal history. Organizations and contact addresses were invented for this demonstration. Source excerpts below are authored sample content, not authentic medical records, court filings, or legal advice.
+Export date: 2026-10-02
+Snapshot convention: events through October 2 are recorded history; appointments and dates after October 2 are prospective. Task due dates are internal file-review targets, not statements of legal deadlines. The separately described fictional case scheduling stipulation is a story fact only.
+
+SECTION 1 — MATTER HEADER
+Matter number: DEMO-KEVIN-003
+Client: Kevin Pyo - Car Crash
+Description: Kevin Pyo — three-vehicle intersection crash with a delivery van, fractured dominant right forearm, disputed traffic signal, missing dashcam segment, and incomplete coverage disclosures.
+Practice area: Personal Injury
+Matter stage: Litigation
+Status: Open
+Open date: 2026-02-16
+Responsible attorney: Avery Chen
+Responsible staff: Maya Ellis
+Currency: USD
+Source label: Fictional demonstration matter; snapshot October 2, 2026
+
+SECTION 2 — CUSTOM FIELDS
+Date of Incident
+  2026-02-11
+
+Accident Location
+  Fictional junction of Glassmaker Avenue and Orchard Loop, New Rochelle, New York. The roads and intersection geometry in this case are invented, even though New Rochelle is a real city.
+
+Case Summary
+  Kevin Pyo says a delivery van turned across his green light, struck his car, and pushed it into a second collision that broke both bones in his dominant right forearm. The delivery driver disputes the signal, the available video skips the impact, and the following driver says the first collision left no room to stop. Plates were implanted the next day; Kevin still cannot reliably grip tools or rotate his forearm for his freelance exhibit work. The parties have agreed to an October 22 mediation, but revision treatment, net work loss, complete video, and potential excess coverage remain unresolved.
+
+Insurance Carrier
+  Parcel Finch Logistics LLC: Pine Quay Casualty primary automobile liability. Claimed possible excess: Silver Index Indemnity. Following driver: Lumen Auto Assurance. Kevin's personal automobile and first-party claim: Northglass Mutual. Health benefits: Marigold Benefit Cooperative. Every organization is fictional.
+
+Claim Number
+  Pine Quay: PQ-26-0211-FINCH; Silver Index notice: SI-NOTICE-441; Lumen: LA-20618; Northglass: NG-KP-2611; Marigold recovery reference: MB-8841. These are invented identifiers used only to connect the sample records.
+
+Policy Limits
+  Delivery van primary: $1,000,000 combined single limit reported on a declarations excerpt; vehicle and driver endorsement review remains open. Possible excess: $2,000,000 reported by the broker, with no complete policy or coverage acceptance. Following driver's declarations: $100,000 per person / $300,000 per occurrence. Client's recorded UM/UIM: $100,000 / $300,000, applicability not determined. First-party benefit ledger: $50,000 paid, consisting of $34,500 medical payments and $15,500 wage payments.
+
+Policy Limits Confirmed
+  Partly. The recorded declarations do not establish whether every asserted coverage applies to this occurrence. The possible excess layer is unconfirmed; competing claimants and available limits have not been fully identified.
+
+Excess Insurance Coverage
+  Unknown
+
+Treatment Status
+  Continuing hand rehabilitation after February 12 fixation of right radius and ulna fractures. September review described healing with persistent painful rotation and intermittent finger tingling. A possible further procedure is being discussed; it is not scheduled, approved, or certain. No final discharge or permanent impairment conclusion is in the supplied narrative.
+
+Medical Specials To Date
+  $83,460.00 in gross medical charges. Updated October 1 statements show insurance paid $49,000.00 and Kevin paid $3,000.00, including his September 30 hospital payment of $900.00. Discounts and write-offs total $18,400.00, including $1,500.00 of hospital financial assistance. Remaining provider balances total $13,060.00: $4,010.00 assigned to Kevin, $7,000.00 pending insurance, and $2,050.00 in denied claims under appeal. Payments, adjustments, and remaining balances reconcile to the original charges.
+
+Wage Loss Claimed
+  $49,000.00 claimed past work impact through September 30: $15,000.00 net canceled commissions, $24,600.00 reduced earnings on retained work, and $9,400.00 incremental replacement labor. Northglass paid $15,500.00 in wage benefits, separately tracked as a potential credit; a simple subtraction gives $33,500.00, not a final recoverable-loss opinion. Full project-level cost records are incomplete.
+
+Health Insurance or Lien Holder
+  Marigold Benefit Cooperative provisionally requests reimbursement of $14,500.00, matching health payments listed in the current ledger. The demand is not a final payoff, and its legal basis, adjustments, and treatment of future payments remain under review. The $14,500.00 is part of medical payments, not an additional medical charge.
+
+Lien Payoff Status
+  Payoff review in progress. Marigold's provisional reimbursement claim is $14,500.00; an itemized response is requested by October 13. No final payoff has been agreed. This claim concerns insurance payments already included in the medical ledger and is not an additional provider bill or current payment due from Kevin.
+
+Prior Related Injuries
+  Kevin describes a 2019 right wrist sprain that resolved before this crash. A September produced intake form mentions occasional hand fatigue during long fabrication sessions in 2025. The treating surgeon has not yet addressed whether that history changes any current opinion; no conclusion is assumed.
+
+HIPAA Authorization Received
+  Yes; fictional signed authorization logged February 18 and refreshed September 14 for the six listed providers.
+
+Liability Assessment
+  Contested. Kevin alleges the van turned across his permitted path. The van driver alleges a late entry against the signal. The following driver disputes responsibility for the arm injury. Signal timing, camera clock alignment, vehicle movement, and the sequence of the two impacts remain factual questions.
+
+Mediation Status
+  Private mediation scheduled for 2026-10-22 by agreement, contingent on the participants' availability. No settlement is reached, offer accepted, release signed, or payment authorized in this snapshot.
+
+Case Expenses
+  $2,475.00 in firm-paid costs: investigator $900.00, reconstruction deposit $1,000.00, records copies $275.00, filing charges $300.00. These are separate from the $83,460.00 medical charges and the claimed work impact.
+
+Property Damage
+  Recorded vehicle loss $15,400.00, consisting of $14,400.00 insurer payment and $1,000.00 deductible. It is tracked separately and excluded from the bodily injury arithmetic in this file. Subrogation and deductible recovery status have not been resolved.
+
+SECTION 3 — CONTACTS
+CLIENT
+  Kevin Pyo - Car Crash — Fictional claimant, right-handed freelance exhibit fabricator and illustrator, age 34 in the story
+    Email: kevin.demo@example.invalid
+    Contact preference: Written updates with a plain-language explanation of what is needed and why. A family member may help scan documents but has no settlement authority.
+
+LEGAL TEAM
+  Avery Chen — Fictional responsible attorney at Paper Lantern Trial Studio
+    Email: avery@paperlantern.example.invalid
+  Maya Ellis — Fictional paralegal and chronology coordinator
+    Email: maya@paperlantern.example.invalid
+
+ADVERSE PARTIES
+  Noah Vale — Fictional delivery van driver, employee of Parcel Finch Logistics LLC
+    Role: Driver traveling west before beginning a left turn across Kevin's eastbound path; liability allegations are disputed.
+  Parcel Finch Logistics LLC — Fictional local delivery operator and van lessee
+    Email: claims@parcelfinch.example.invalid
+  Harbor Kite Leasing LLC — Fictional titled owner of the delivery van
+    Email: records@harborkite.example.invalid
+  Elise Rowan — Fictional following hatchback driver
+    Role: Driver in the eastbound lane behind Kevin; says the van impact occurred before her contact with Kevin's car.
+
+INSURERS AND COUNSEL
+  Pine Quay Casualty — Fictional primary carrier for the van claim
+    Email: claims@pinequay.example.invalid
+  Silver Index Indemnity — Fictional possible excess carrier; coverage acceptance not supplied
+    Email: intake@silverindex.example.invalid
+  Lumen Auto Assurance — Fictional hatchback driver's insurer
+    Email: bodilyinjury@lumenauto.example.invalid
+  Northglass Mutual — Fictional claimant automobile insurer and first-party benefit administrator
+    Email: benefits@northglass.example.invalid
+  Marigold Benefit Cooperative — Fictional health benefit payer and provisional reimbursement claimant
+    Email: recovery@marigoldbenefit.example.invalid
+  Rowan Bell — Fictional defense counsel for the delivery interests
+    Email: rowan@granitepaper.example.invalid
+
+WITNESSES AND CONSULTANTS
+  Tessa Wren — Fictional independent pedestrian witness standing at the southwest bus shelter
+    Email: tessa.witness@example.invalid
+  Omar Finchley — Fictional café worker who heard the first crash and then looked up
+    Email: omar.witness@example.invalid
+  Jun Park — Fictional reconstruction consultant retained to review available data
+    Email: jun@meadowvector.example.invalid
+
+MEDICAL PROVIDERS
+  Sable Harbor Emergency Hospital — Fictional emergency department and inpatient facility
+    Email: records@sableharbor.example.invalid
+    Role: Initial evaluation, admission, operating room facility services, and inpatient stay.
+  Aldercrest Orthopedics — Fictional treating forearm specialist, Dr. Mina Bell
+    Email: records@aldercrest.example.invalid
+    Role: Fracture fixation, follow-up examinations, and discussion of possible further treatment.
+  Brindle Imaging — Fictional independent diagnostic imaging group
+    Email: records@brindle.example.invalid
+    Role: Follow-up radiographs and September cross-sectional imaging.
+  Kestrel Hand Therapy — Fictional outpatient hand rehabilitation practice
+    Email: records@kestrelhand.example.invalid
+    Role: Grip, forearm rotation, activity tolerance, and graded work simulation.
+  Lantern Neurology — Fictional consultant for intermittent hand sensory symptoms
+    Email: records@lanternneuro.example.invalid
+    Role: Sensory examination and diagnostic study; no permanent nerve injury conclusion recorded.
+  Cobalt Recovery Medicine — Fictional rehabilitation physician and work-capacity consultant
+    Email: records@cobaltrecovery.example.invalid
+    Role: Functional restrictions, pain-related sleep disruption, and activity pacing documentation.
+
+SECTION 4 — CASE EXPENSES / ACTIVITIES
+2026-09-25  Sable Harbor Emergency Hospital — Gross treatment charges $32,900.00
+  Facility episode February 11–14. Recorded payments $25,000.00, adjustments $6,000.00, remaining balance $1,900.00. Payments comprise Northglass $21,000.00 and Marigold $4,000.00. This facility amount includes the operating room facility component; the specialist's professional services are separately itemized. The balance is the posted amount, not an independently validated collection obligation.
+
+2026-09-25  Aldercrest Orthopedics — Gross treatment charges $18,750.00
+  Professional services February 12–September 18. Recorded payments $11,000.00, adjustments $5,000.00, remaining balance $2,750.00. Payments comprise Northglass $7,500.00 and Marigold $3,500.00. The quoted possibility of a future procedure is not included in these charges. The supplied bill contains no confirmed charge for future treatment.
+
+2026-09-25  Brindle Imaging — Gross treatment charges $5,260.00
+  Independent outpatient imaging February 27–September 16. Recorded payments $3,500.00, adjustments $1,200.00, remaining balance $560.00. Payments comprise Northglass $2,000.00 and Marigold $1,500.00. Images made during the inpatient episode are in the facility account and are not counted here again. The September study's interpretation is included in the source narrative.
+
+2026-09-25  Kestrel Hand Therapy — Gross treatment charges $13,500.00
+  Outpatient visits March 2–September 24. Recorded payments $6,500.00, adjustments $3,000.00, remaining balance $4,000.00. Payments comprise Northglass $4,000.00, Marigold $2,000.00, and patient $500.00. Two September entries have similar descriptions; the posted gross total is retained pending coding clarification, not reduced based on a guess.
+
+2026-09-25  Lantern Neurology — Gross treatment charges $4,800.00
+  Consultation and diagnostic services July 14–August 4. Recorded payments $2,600.00, adjustments $1,000.00, remaining balance $1,200.00. Payments comprise Marigold $2,000.00 and patient $600.00. No Northglass payment is posted on this account. These charges do not establish that every sensory complaint is attributable to the collision.
+
+2026-09-25  Cobalt Recovery Medicine — Gross treatment charges $8,250.00
+  Rehabilitation physician visits April 9–September 10. Recorded payments $2,500.00, adjustments $2,200.00, remaining balance $3,550.00. Payments comprise Marigold $1,500.00 and patient $1,000.00. A promised functional addendum is absent from the produced chart; there is no separate charge for that missing addendum in this amount.
+
+2026-03-06  Independent scene investigator — Firm expense $900.00
+  Paid for intersection photography, witness canvass, and a diagram showing positions described by the participants. The invoice proves the expenditure only; it does not authenticate each witness's account. No reimbursement has been received. This is a litigation cost and is excluded from treatment charges.
+
+2026-08-21  Reconstruction consultant deposit — Firm expense $1,000.00
+  Paid deposit for preliminary examination of collision photographs, available footage, and van movement data. The consultant has not issued a final causation report. The deposit is not the eventual total expert cost, and no additional accrued amount is invented for the snapshot.
+
+2026-09-18  Records reproduction — Firm expense $275.00
+  Paid combined copying and secure-transfer invoices for the six providers. This amount concerns obtaining copies, not the treatment reflected in those copies. It is not part of any provider patient balance, benefit payment, or reimbursement demand. Source invoice references are fictional COPY-41 through COPY-46.
+
+2026-05-20  Filing charges — Firm expense $300.00
+  Paid for the fictional action's initial filing and related submission charges. This is a story-specific invoice, not a representation of the fee schedule of an actual court. The matter uses fictional docket DEMO-CV-2026-441 and cannot be located in a real public docket.
+
+2026-10-01 — Sable Harbor Emergency Hospital: updated billing statement
+  Provider: Sable Harbor Emergency Hospital
+  Billed: $32,900.00
+  Insurance paid: $25,000.00
+  Patient paid: $900.00
+  Adjustments: $6,000.00
+  Outstanding balance: $1,000.00
+  Patient responsibility: $1,000.00
+  Insurance pending: $0.00
+  Insurance denied: $0.00
+  Status: confirmed
+  Account note: Kevin paid $900 on September 30, receipt SH-0930-KP. The hospital approved $1,500 in financial assistance and applied a $4,500 negotiated discount, together making the $6,000 adjustment. Northglass paid $21,000 and Marigold paid $4,000. The remaining $1,000 is on a four-payment plan of $250, due October 15, November 15, December 15, and January 15. All figures and receipts are fictional sample data.
+
+2026-10-01 — Aldercrest Orthopedics: updated billing statement
+  Provider: Aldercrest Orthopedics
+  Billed: $18,750.00
+  Insurance paid: $11,000.00
+  Patient paid: $0.00
+  Adjustments: $5,000.00
+  Outstanding balance: $2,750.00
+  Patient responsibility: $750.00
+  Insurance pending: $2,000.00
+  Insurance denied: $0.00
+  Status: pending
+  Account note: Northglass paid $7,500 and Marigold paid $3,500. Contractual discounts reduced charges by $5,000. Kevin's remaining copay and deductible portion is $750, due October 20; he has not made a payment to this provider yet. A separate $2,000 claim is awaiting Marigold's decision, with follow-up scheduled for October 9. These are cumulative fictional provider totals, replacing the September statement.
+
+2026-10-01 — Brindle Imaging: updated billing statement
+  Provider: Brindle Imaging
+  Billed: $5,260.00
+  Insurance paid: $3,500.00
+  Patient paid: $0.00
+  Adjustments: $1,200.00
+  Outstanding balance: $560.00
+  Patient responsibility: $560.00
+  Insurance pending: $0.00
+  Insurance denied: $0.00
+  Status: confirmed
+  Account note: Northglass paid $2,000 and Marigold paid $1,500. A $1,200 contractual discount has posted. The insurer's benefits statement assigns the remaining $560 deductible to Kevin, due October 20. No patient payment has posted yet, and no insurance claim remains open. Fictional cumulative statement; inpatient scans remain included in the hospital bill rather than this account.
+
+2026-10-01 — Kestrel Hand Therapy: updated billing statement
+  Provider: Kestrel Hand Therapy
+  Billed: $13,500.00
+  Insurance paid: $6,000.00
+  Patient paid: $500.00
+  Adjustments: $3,000.00
+  Outstanding balance: $4,000.00
+  Patient responsibility: $750.00
+  Insurance pending: $2,000.00
+  Insurance denied: $1,250.00
+  Status: disputed
+  Account note: Kevin paid $500 on September 18, receipt KH-0918-KP. Northglass paid $4,000 and Marigold paid $2,000; contractual adjustments total $3,000. Of the $4,000 statement balance, $750 is Kevin's remaining copay, $2,000 awaits an insurance decision, and $1,250 was denied for overlapping therapy codes. A corrected claim is under appeal, with follow-up on October 8. The denied amount is held from patient collection while disputed. All amounts are fictional cumulative totals.
+
+2026-10-01 — Lantern Neurology: updated billing statement
+  Provider: Lantern Neurology
+  Billed: $4,800.00
+  Insurance paid: $2,000.00
+  Patient paid: $600.00
+  Adjustments: $1,000.00
+  Outstanding balance: $1,200.00
+  Patient responsibility: $400.00
+  Insurance pending: $0.00
+  Insurance denied: $800.00
+  Status: disputed
+  Account note: Marigold paid $2,000 and Kevin paid $600 on September 8, receipt LN-0908-KP. The provider applied a $1,000 contracted discount. Kevin's remaining $400 is payable in four monthly $100 installments starting October 15. A separate $800 diagnostic-study denial is under appeal with clinical support requested by October 7; it is not assigned to Kevin while the appeal is open. These are fictional cumulative statement amounts.
+
+2026-10-01 — Cobalt Recovery Medicine: updated billing statement
+  Provider: Cobalt Recovery Medicine
+  Billed: $8,250.00
+  Insurance paid: $1,500.00
+  Patient paid: $1,000.00
+  Adjustments: $2,200.00
+  Outstanding balance: $3,550.00
+  Patient responsibility: $550.00
+  Insurance pending: $3,000.00
+  Insurance denied: $0.00
+  Status: pending
+  Account note: Kevin paid $1,000 on September 22, receipt CR-0922-KP. Marigold paid $1,500 and the provider applied $2,200 in discounts. Kevin has $550 of remaining cost sharing due October 25. The other $3,000 is a submitted insurer claim awaiting the visit documentation, with follow-up on October 12. No additional charge is included for the outstanding functional addendum. Fictional cumulative statement.
+
+SECTION 5 — TASKS
+2026-09-25 — By medical provider: Aldercrest Orthopedics — Clarify possible revision surgery and decision date
+  The specialist describes options but gives no date and no recommendation choosing a procedure. Review the incomplete response, seek the basis for further intervention, and clarify what Kevin has decided. Internal review target September 25; no treatment is booked.
+  Assigned: Avery Chen | Status: Pending
+
+2026-09-28 — By medical provider: Kestrel Hand Therapy — Obtain September progress notes and work simulation results
+  Two written requests seek the latest progress notes, visit-level attendance, grip measurements, and work simulation tolerance. No response follows the September 29 chaser. Internal review target September 28; receipt would help distinguish measured limits from reported difficulties.
+  Assigned: Maya Ellis | Status: Pending
+
+2026-09-30 — Obtain complete employment and commission records from client
+  Partial project invoices arrived, but cost savings and paid replacement labor are not fully supported. Kevin Pyo - Car Crash must reconcile the claimed $49,000 work impact against bank deposits and the $15,500 benefit payment. Internal review target September 30.
+  Assigned: Avery Chen | Status: Pending
+
+2026-10-01 — Confirm delivery van primary endorsements and possible excess coverage
+  Awaiting complete policy, named-insured schedule, applicable endorsements, tender positions, and any other claimants. Broker correspondence mentions a possible layer but does not establish availability. Internal review target October 1.
+  Assigned: Avery Chen | Status: Pending
+
+2026-10-03 — By medical provider: Sable Harbor Emergency Hospital — Review itemized ledger and allocate posted adjustments
+  Match the September 25 balance of $1,900 to Kevin's $900 payment posted September 30 and the updated October 1 balance of $1,000. The $6,000 adjustment comprises a $4,500 insurer-negotiated discount and $1,500 hospital assistance. Check receipt SH-0930-KP and the assistance approval against the statement. Internal review target October 3.
+  Assigned: Maya Ellis | Status: Pending
+
+2026-10-05 — By medical provider: Brindle Imaging — Review delivered imaging records and image identifiers
+  Imaging records were provided with accession numbers and a narrative report. Compare the identifiers to the retained export and ensure the September study appears in the chronology. Internal review target October 5; interpretation remains for the responsible clinician.
+  Assigned: Avery Chen | Status: Pending
+
+2026-10-06 — By medical provider: Lantern Neurology — Request updated sensory notes and prior-history comparison
+  Updated notes have not been requested. The initial consultation does not answer whether the old wrist history changes the clinician's assessment or whether further testing occurred. Internal review target October 6; prepare a focused inquiry after chart review.
+  Assigned: Avery Chen | Status: Pending
+
+2026-10-07 — By medical provider: Cobalt Recovery Medicine — Resolve unavailable functional addendum notes
+  The promised functional addendum cannot be provided because it was never finalized. Existing signed notes remain available. Record that limitation and decide whether a new assessment is needed; do not treat the missing addendum as a finding. Internal review target October 7.
+  Assigned: Avery Chen | Status: Pending
+
+2026-10-08 — Account for missing dashcam impact segment and retention history
+  The local device segment is unavailable after a reported overwrite. The cloud vendor's separate retention response remains outstanding. Review what survives, who handled it, and whether another camera covers the gap. Internal review target October 8; deletion intent is not established.
+  Assigned: Avery Chen | Status: Pending
+
+2026-10-09 — Clarify pedestrian witness vantage and signal recollection
+  Compare the recorded interview with the shelter sightline photographs and draft deposition topics. The witness saw vehicle movement but may have watched a different signal face. Internal review target October 9; recollection remains disputed.
+  Assigned: Maya Ellis | Status: Pending
+
+2026-10-12 — Obtain signal controller timing and maintenance history
+  Native controller data has not been requested; maintenance history has not been requested either. Confirm the correct custodian and prepare a targeted request. Internal review target October 12, not a statement of a statutory response period.
+  Assigned: Avery Chen | Status: Pending
+
+2026-10-13 — Reconcile benefit payments and provisional reimbursement demand
+  Compare the provisional $14,500 demand against the payment schedule and identify any duplicated dates. The final payoff is unknown. Internal review target October 13; no disbursement or acceptance of the reimbursement position is authorized by this task.
+  Assigned: Maya Ellis | Status: Pending
+
+2026-10-09 — Prepare mediation narrative with disputed facts clearly attributed
+  Assemble a concise story and an appendix distinguishing witnessed events, client reports, provider observations, and open questions. No final offer position is set. Internal review target October 9 ahead of the agreed October 12 packet exchange and October 22 conference.
+  Assigned: Avery Chen | Status: Pending
+
+2026-10-16 — Confirm conference participants and authority contacts
+  Awaiting identification of the excess representative and confirmation of the leasing company's participant. The date is an internal logistics target. A calendar invitation does not prove that every insurer accepts coverage or has authorized funds.
+  Assigned: Maya Ellis | Status: Pending
+
+2026-03-02 — Preserve surviving vehicle photographs and original phone files
+  Completed March 2. Kevin supplied original files, and the case team retained an indexed copy with receipt history. Preservation of these items does not mean the van's missing recording was recovered.
+  Assigned: Maya Ellis | Status: Completed
+
+2026-05-21 — Log fictional action filing and service receipts
+  Completed May 21. Initial papers and service acknowledgments were logged for the demonstration docket. This historical task is retained for the story and is no longer an open blocker.
+  Assigned: Avery Chen | Status: Completed
+
+SECTION 6 — COMMUNICATIONS
+2026-02-16  Kevin Pyo - Car Crash > Avery Chen
+  First account after discharge — I was on my way home with drawing paper and adhesive in the back seat. My light looked green. The van came across from the other direction, and there was a second bang after the first. I cannot reliably say when my arm broke. I remember reaching toward the steering wheel, not every movement after that. My main worry is that both my paid work and the ordinary things at home depend on my right hand.
+
+2026-02-18  Avery Chen > Parcel Finch Logistics LLC
+  Preservation request for vehicle and electronic material — The fictional request identifies the van, the February 11 route, dispatch messages, available dashcam storage, telematics, driver assignment, and inspection history. It asks the recipient to identify any service provider holding separate copies. Receipt is sought without assuming which data existed or whether any gap is intentional. The letter records preservation efforts; it does not establish the truth of the claimant's account.
+
+2026-02-19  Parcel Finch Logistics LLC > Avery Chen
+  Acknowledgment and custodian referral — We have retained the vehicle and notified our fleet administrator. The camera system uses local storage and a separate subscription portal. Our safety manager can provide the exported clip presently visible in that portal. We are reviewing who retrieved it. Driver Noah Vale disputes the signal description. We are not representing that the portal export is the entire recording for the route or that the device time was synchronized.
+
+2026-02-20  Avery Chen > Lumen Auto Assurance
+  Following vehicle claim notice — Please identify the insured vehicle, retain available photographs and driver communications, and provide the relevant declarations and claim contact. The notice describes two impacts and expressly states that the available materials do not yet isolate the injury-producing force of each. It requests the hatchback driver's account without treating rear contact alone as a complete reconstruction. No demand amount appears in this sample notice.
+
+2026-02-23  Northglass Mutual > Avery Chen
+  First-party file opened — The fictional administrator acknowledges the benefit application and assigns reference NG-KP-2611. It asks for treatment bills, work certification, and earnings materials, and says benefit accounting will be reported by payment date. It has not accepted every submitted item. This source documents the application process, not a statement about the legal availability of any category of benefits in a real case.
+
+2026-02-25  Pine Quay Casualty > Avery Chen
+  Primary declarations excerpt — Attached excerpt lists Parcel Finch Logistics LLC and a $1,000,000 combined single limit. The adjuster says a vehicle schedule and driver-use endorsements will follow from underwriting. The message does not resolve whether Harbor Kite Leasing LLC qualifies under the policy, whether an exclusion is asserted, or whether another injured person has made a claim. The field summary therefore records a reported limit with unresolved applicability.
+
+2026-03-03  Lumen Auto Assurance > Avery Chen
+  Hatchback account and declarations — Provided declarations show $100,000 per person and $300,000 per occurrence. Elise Rowan reports traveling behind Kevin, braking when the van crossed, and striking the rear after Kevin's car rotated. She says she never saw the controlling signal clearly. Her insurer questions whether the rear contact contributed to the fracture. The message is a party account, not a mechanical conclusion.
+
+2026-03-11  Tessa Wren > Avery Chen
+  Pedestrian witness recollection — I saw the delivery van turn across the lane, then heard the crash and saw a second car stop against the first. I remember a green light above the far corner, but I cannot now label which direction it controlled. I was beneath the shelter roof and was holding an umbrella. I did not see Kevin using a phone. I cannot say he was not using one before the moment I noticed him.
+
+2026-03-18  Omar Finchley > Avery Chen
+  Café worker account — I heard one loud collision and looked through the window before the second sound. By then the dark car was sideways. The van looked like it was finishing a left turn. I did not watch either approach to the intersection and cannot give a signal color. A coworker mentioned a camera, but I do not manage its storage. My statement should not be described as seeing the initial impact.
+
+2026-04-02  Parcel Finch Logistics LLC > Avery Chen
+  Exported camera clip and device description — Provided clip begins before the turn and resumes after the impact, with an eleven-second gap in the delivered sequence. The fleet manager says the local card is no longer available in its original state after ordinary continued use. The message gives no export log or overwrite timestamp. A cloud-support request was opened. The file does not establish whether the gap arose during recording, upload, or later export.
+
+2026-04-10  Avery Chen > Parcel Finch Logistics LLC
+  Follow-up request for camera export history — Please provide the native files, portal audit trail, camera serial identifier, clock configuration, and the cloud support ticket. The supplied clip's gap overlaps the events most important to both sides. A list of surviving data and a clear explanation of missing data would help frame the next investigation. The request does not accuse the recipient of deliberate deletion or claim that missing content necessarily favors either party.
+
+2026-04-24  Harbor Kite Leasing LLC > Avery Chen
+  Lease excerpt and vehicle handover record — Attached excerpt identifies Parcel Finch as the vehicle's lessee during the relevant period and lists routine servicing responsibilities. It omits two referenced schedules and a signature attachment. The lessor says it did not assign the driver or direct that day's route. Whether that account is supported, and what legal effect any contract has, remain matters for review rather than assumed conclusions in this sample.
+
+2026-05-04  Kevin Pyo - Car Crash > Avery Chen
+  Employment and commission update — I can now sketch on a tablet for short sessions, but the assembly work is different. I canceled two commissions and kept others by hiring help. Some clients paid deposits months before the crash, so a bank deposit alone will not tell you when I earned it. I attached my job list and can identify the helper invoices. My first estimate was lost sales; I understand you need to separate costs I avoided.
+
+2026-05-15  Pine Quay Casualty > Avery Chen
+  Liability position remains disputed — Our driver reports an arrow phase and says the eastbound car entered after the signal changed. We have not obtained native controller data. The visible clip does not show the claimant's controlling light throughout the approach. We also reserve the issue of the following impact's contribution to the claimed injury. This correspondence states a dispute; it supplies no expert calculation allocating forces between the two collisions.
+
+2026-06-09  Northglass Mutual > Avery Chen
+  Cumulative benefit payment schedule — The fictional payment schedule totals $50,000: medical payments $34,500 and wage payments $15,500. The administrator marks the stated benefit allocation exhausted in its file and encloses transaction identifiers. The medical payments are included in provider ledgers; the wage payments are not. The source makes no determination about a later tort recovery, reimbursement rights, or additional policy provisions outside the supplied schedule.
+
+2026-06-17  Avery Chen > Kevin Pyo - Car Crash
+  Request for employment and commission backup — Please send the canceled-job agreements, refunds, job-specific purchases that were avoided, replacement-worker invoices, and dates the replacement work was performed. We need the underlying figures behind the work-loss worksheet, including projects that went ahead. A prior-year comparison will be useful only if we account for seasonality and the timing of deposits. The request seeks records, not a promise of what an insurer will pay.
+
+2026-08-12  Parcel Finch Logistics LLC > Avery Chen
+  Telematics export with limitations — Delivered table includes location points, speed estimates, and harsh-braking flags for the route. The fleet administrator says samples are periodic rather than continuous. The table's timestamps use UTC while the camera overlay uses an unverified local clock. No signal phase data is included. A sudden speed change cannot, by itself, tell which traffic light was displayed or establish the precise interval between two contacts.
+
+2026-08-25  Jun Park > Avery Chen
+  Preliminary reconstruction observations — The surviving photographs and periodic location points are adequate to identify broad travel directions. They are not yet adequate for a reliable impact-speed estimate or a medical injury allocation. The camera clock appears offset from a phone photograph, but the phone's capture time also needs verification. I recommend testing possible alignments against a common visible event, rather than assuming the displayed times share one clock.
+
+2026-08-31  Marigold Benefit Cooperative > Avery Chen
+  Provisional reimbursement notice — Our current listing identifies $14,500 in health payments for services appearing connected to this occurrence. The enclosed amount is provisional and subject to eligibility review, further payments, and correction of transaction coding. We have not issued a final payoff. The notice references plan documents that were not attached. It should be tracked as an asserted reimbursement position, not added to the gross bills or treated as an agreed deduction.
+
+2026-09-02  Avery Chen > Marigold Benefit Cooperative
+  Request for itemization and basis of reimbursement position — Please provide the payment-level listing, the applicable plan language, any administrator delegation, and a contact who can correct unrelated or duplicated items. The file contains a prior wrist history that may require careful date review. This request does not concede the asserted amount or its enforceability. It also asks how the administrator will update the amount if later charges are paid before any resolution.
+
+2026-09-03  Silver Index Indemnity > Avery Chen
+  Notice acknowledged; complete policy not supplied — We acknowledge notice SI-NOTICE-441. The broker referenced a $2,000,000 layer, but we are still identifying the policy period, named insured, underlying schedule, and whether the claimed operation falls within the reported policy. This acknowledgment is not coverage acceptance. We cannot yet confirm who will attend the proposed mediation. No promise of payment or exhaustion of underlying coverage is made.
+
+2026-09-08  Avery Chen > Aldercrest Orthopedics
+  Request for revision surgery clarification — Please advise whether a further procedure is recommended, optional, or still under discussion, and identify the planned decision date if one exists. We need the clinical reason, the remaining questions, and the patient's recorded preference. The case team is preparing a status narrative and will not describe a possibility as scheduled treatment. Please distinguish previously performed fixation from any proposed revision surgery.
+
+2026-09-10  Avery Chen > Kestrel Hand Therapy
+  Request for September progress notes — Please provide recent notes, attendance, serial grip and rotation measures, and work simulation observations. Include explanations of any missed visits and any change in home exercise instructions. The current file ends before the latest reported work attempt. The case narrative needs to distinguish performance observed in sessions from activities described by the client. This is the first recorded request for this September update.
+
+2026-09-14  Avery Chen > Sable Harbor Emergency Hospital
+  Request for itemized ledger — Please send the account ledger showing each posted charge, payment, adjustment, and balance for the February admission. The summary bill alone does not show which payer funded which item. We need to reconcile the facility charges to the benefit schedules and ensure no professional bill was copied into the account twice. The request concerns accounting detail, not a new treatment opinion.
+
+2026-09-15  Avery Chen > Brindle Imaging
+  Request for complete imaging records — Please provide the reports and accession identifiers for the follow-up studies, including the latest September examination once finalized. Identify whether the export contains images or report text only. The case team needs an accurate index so the treating specialist can refer to the same study. The request does not ask the records desk to offer an independent medical interpretation.
+
+2026-09-18  Aldercrest Orthopedics > Avery Chen
+  Revision surgery discussion remains incomplete — The physician discussed continued therapy versus possible operative assessment if painful rotation persists. No date is set. The September images are being compared with prior films, and the patient has not chosen an option. Further discussion will follow after a repeat examination. This is not a recommendation that another operation definitely occur, and the office has not supplied a future cost estimate.
+
+2026-09-21  Cobalt Recovery Medicine > Avery Chen
+  Functional addendum notes unavailable — The clinician confirms that the proposed detailed work-capacity addendum was never finalized and cannot be provided as a signed record. Existing visit notes were delivered in August and remain the available chart. A draft scheduling reminder should not be mistaken for an examination result. The practice can consider a future appointment, but no new assessment or conclusion is documented by this message.
+
+2026-09-22  Avery Chen > Kevin Pyo - Car Crash
+  Chaser for employment and commission reconciliation — Please provide the remaining helper receipts and confirm which canceled commission deposits were refunded. We still need a project-by-project explanation of reduced earnings. The working total separates net cancellations, lower earnings on retained work, and incremental hired labor. Before mediation, we need to check that a helper expense has not also been counted as the same project's lost margin.
+
+2026-09-23  Brindle Imaging > Avery Chen
+  Imaging records delivered — Provided report text and accession index for studies BI-26127, BI-26211, and BI-26916. The September narrative describes healing changes and recommends correlation by the treating clinician. The accompanying image export is listed by series identifier in the index. The records coordinator makes no opinion about future treatment or causation. The case team has logged receipt but has not completed comparison of every identifier.
+
+2026-09-24  Sable Harbor Emergency Hospital > Avery Chen
+  Itemized ledger attached — Attached ledger posts $32,900 charges, $25,000 payments, $6,000 adjustments, and a $1,900 balance for the admission. Payments are labeled by payer and transaction reference. The billing desk says one benefit transaction was reposted under a corrected reference, without changing the total. The case team should compare the reversal and replacement entries together rather than adding both positive lines as separate payments.
+
+2026-09-25  Avery Chen > Pine Quay Casualty
+  Follow-up on complete primary and excess materials — Please provide the endorsements, vehicle schedule, remaining lease attachments in your possession, and the current tender position. We also request an update on any other bodily injury claim that may share a limit. The broker's mention of excess coverage and a declaration's printed limit answer different questions. The October conference would be more useful with the actual coverage documents available to the participants.
+
+2026-09-26  Rowan Bell > Avery Chen
+  Mediation agreement and disputed issues — The delivery interests agree in principle to the October 22 private session and ask for the updated damages packet ten days beforehand under the parties' proposed exchange arrangement. We continue to dispute the traffic signal, speed allegations, and allocation between the two impacts. Our attendance does not concede liability. We are coordinating with the lessor and carriers and will confirm the representative list separately.
+
+2026-09-28  Kevin Pyo - Car Crash > Avery Chen
+  Partial employment and commission documents — Attached are the two cancellation agreements, one refund confirmation, and six helper invoices. The remaining helper receipts will follow. I marked which jobs used subcontracted assembly, but I have not matched every payment to the bank statement. The third-quarter worksheet also includes deposits for work finished earlier. This is incomplete support for the total, and I do not want those deposits presented as new post-crash earnings without explanation.
+
+2026-09-29  Avery Chen > Kestrel Hand Therapy
+  Chaser for September progress notes — Following up on the September 10 request for recent notes and work simulation results. Please send the available material and identify any visit that is still awaiting signature. Kevin reports an attempted return to light fabrication on September 24, but we do not yet have the therapist's contemporaneous observation. No response to this chaser is recorded before the October 2 snapshot.
+
+2026-09-30  Avery Chen > Aldercrest Orthopedics
+  Follow-up request for revision surgery discussion — Please clarify whether the repeat examination has been scheduled and whether the September images changed the available options. Our file should state the uncertainty accurately. We still need the distinction between a procedure considered for symptoms and any definite future plan. Kevin has not authorized the case team to describe a treatment election that he has not made with the clinician.
+
+2026-10-01  Aldercrest Orthopedics > Avery Chen
+  Partial surgery update; no date chosen — The physician is reviewing the latest image comparison. No date is set for a revision procedure, and no election is recorded. A follow-up visit is tentatively held for October 12, subject to patient confirmation. The office will follow with a completed assessment after that visit. The February fixation is complete; the unresolved issue is the future course, not whether the original operation occurred.
+
+2026-10-02  Maya Ellis > Avery Chen
+  Snapshot handoff and conference readiness — The file now contains a coherent accident chronology, linked treatment narrative, and a reconciled posted-charge table. The unresolved work includes the incomplete treatment plan, latest therapy material, project-level work-loss support, camera provenance, controller data, coverage documents, and final reimbursement position. Internal target dates keep those items visible. Nothing in this handoff authorizes a settlement communication, a medical decision, or a payment to any recipient.
+
+SECTION 7 — NOTES
+2026-02-16 — Intake summary: what Kevin says happened
+  Mechanism as he tells it: he entered the fictional Glassmaker Avenue junction eastbound with a green light, saw a white delivery van turn left across him, and felt a side impact followed by a rear impact. Injuries claimed: right forearm fractures involving the radius and ulna, right wrist stiffness, intermittent right hand tingling, and neck soreness. Kevin is right-handed and earns a living drawing exhibit concepts and assembling physical installations. He remembers his left shoulder restrained by the seatbelt and his right hand near the wheel; he does not remember whether the hand struck the console. He denies losing consciousness but describes the minutes afterward as confused and painful. He recalls someone speaking through the passenger window and trying not to move his arm. He could not identify that person at intake. His confidence about the green light is his own recollection, not an independently established signal reading. The case team recorded uncertainties in his first account rather than filling them with later assumptions.
+
+2026-02-17 — Client background and the ordinary day before the crash
+  Kevin lives in the story with a partner who works evening shifts. His business takes small exhibit and illustration commissions from fictional museums and independent retailers. He typically alternates computer drawing with cutting foam board, sanding light components, fitting fasteners, and carrying packed displays. He was returning home from an art-supply purchase on February 11; the current account does not describe an employer-directed delivery. His week already contained deadlines and ordinary business variability. One winter client had postponed an installation before the collision, which matters because its later missing revenue cannot automatically be attributed to the crash. Kevin says the practical change after discharge was abrupt: he could not button a shirt, open a heavy door comfortably, or stabilize a ruler with the injured hand. Those personal reports help tell the story but should remain separate from measured medical findings and proven financial loss.
+
+2026-02-18 — Emergency record excerpt: initial observations
+  The authored emergency excerpt records a visibly deformed, painful right forearm after a motor vehicle collision. Radiographs are described as showing displaced fractures of the radius and ulna. Staff documented circulation and sensation checks, immobilization, pain management, and a specialist evaluation. Kevin reported two impacts but could not place the onset of arm pain between them. The record does not identify a traffic signal or assign fault. An early shorthand entry says “rear-end MVC,” while a later history describes a van crossing in front followed by rear contact. That shorthand discrepancy is retained because it may become a defense exhibit; it is not silently changed into an investigator's conclusion. Neck soreness was noted without the forearm finding being described as the only complaint. The fictional chart describes an overnight admission and discussion of treatment options. It is a narrative excerpt created for the demo, not guidance on how an actual fracture should be managed.
+
+2026-02-19 — Operative and discharge excerpt: the first treatment milestone
+  The fictional February 12 operative account describes reduction and fixation of the right radius and ulna with plates and screws. The facility and specialist bills are distinct professional and facility components. The discharge account dated February 14 records a protective splint, planned review, activity limitations, and instructions delivered by the treating team. Kevin needed help opening containers and managing transportation after discharge. The authored excerpt reports no intraoperative complication, but that does not establish complete future recovery. Later concerns about painful rotation relate to the subsequent course. The file distinguishes the operation that already happened from a possible future procedure that has not been chosen. It also distinguishes actual charges from estimates that might later be obtained. This matters at mediation because a compelling story does not justify presenting a speculative operation as a booked event, or adding a guessed future surgical amount to the past medical bill total.
+
+2026-02-22 — Vehicle photographs and first physical evidence review
+  Client photographs show substantial deformation along the driver's side front quarter and door, rear bumper damage, deployed airbags, and loose supplies in the passenger compartment. They were taken after the vehicles had stopped. No photograph fixes the exact resting position before emergency personnel moved nearby objects, and none records the moment Kevin's arm contacted the interior. The van photographs show front-corner damage; the hatchback photographs show front bumper damage. Those patterns are useful observations, not a complete reconstruction. A small mark on the console was initially called a hand strike by a relative, but no expert has identified it. Original phone files were requested so receipt dates would not be mistaken for capture dates. An image forwarded through messaging may have a different displayed time from the native file. The evidence log therefore keeps origin, receipt, and claimed capture time as separate entries.
+
+2026-02-27 — First specialist follow-up and right-hand dependence
+  The authored follow-up records stable appearing postoperative alignment and ongoing swelling. Kevin describes difficulty turning a key, lifting a kettle, and keeping the forearm in a comfortable position at a desk. He reports using voice input and his left hand for short messages. The clinician distinguishes his report of pain from observable range-of-motion limitations and plans serial assessment. He is not described as ready for unrestricted fabrication work. At the same time, the note does not state that he can do no productive activity at all: he can review designs verbally and discuss scheduling. That distinction becomes important when comparing all-or-nothing wage statements with the mixed pattern of retained work and hired assistance. The case narrative should explain a changed ability to earn, using dates and tasks, instead of treating the label “broken arm” as a substitute for the actual consequences.
+
+2026-03-02 — Initial hand rehabilitation evaluation
+  The first fictional therapy evaluation establishes a baseline for discomfort, rotation, grip tolerance, and everyday tasks. The therapist notes that direct comparison with the uninjured side must account for Kevin's right-hand dominance and pain-limited effort. Kevin's personal goal is to hold a straightedge and rotate a small screwdriver long enough to finish an installation panel. Early sessions emphasize the tasks documented by the treating team and record how he tolerates them. The case file does not prescribe a program. Attendance is initially regular because his partner can drive him. That transportation support later changes when the partner's work schedule changes. The therapist's recorded observations provide a different kind of evidence from Kevin's general statement that he cannot work. Both matter, but a demo user should be able to open the source and see which claim came from which person.
+
+2026-03-06 — Investigator diagram: directions, lanes, and what remains uncertain
+  The scene diagram uses north at the top. Kevin's car traveled east on Glassmaker Avenue. The van approached westbound and began turning south into Orchard Loop across the eastbound lane. Elise's hatchback followed Kevin eastbound. Tessa stood at a shelter southwest of the intersection; Omar was inside a café northeast of it. The site visit occurred weeks after the collision, so cone placement and parked vehicles in investigator photographs cannot be assumed to reproduce the crash scene. The diagram marks the van's turning path as an allegation supported by consistent participant accounts, while the exact impact point remains approximate. The signal cabinet identification was photographed, but no timing download was obtained. Simple travel arrows make the story easier to understand; they should not create false precision about speed, braking distance, or who had a permitted signal.
+
+2026-03-12 — Witness comparison: agreement is narrower than it first sounds
+  Tessa and Omar agree that a van was turning and Kevin's car was struck again near the rear. Their accounts do not supply two independent eyewitness confirmations of the initial signal. Tessa watched the approach but cannot identify the direction controlled by the green light she remembers. Omar looked up after hearing the first collision. A draft interview summary had described both as supporting a green light; the working chronology corrects that overstatement and preserves the underlying accounts. Tessa's umbrella and the shelter frame may have affected her view, and the team has not recreated her eye position. The useful next step is to ask specific, non-leading questions about what she saw before the sound. A witness can be credible about one part of an event and uncertain about another. The story remains understandable when those boundaries are stated plainly.
+
+2026-03-20 — Personal impact interview: dependence and missed commitments
+  Kevin says his partner handled cooking, laundry, and transportation during the first weeks. He had planned to build a small display for a niece's school event and instead sent a digital drawing for someone else to assemble. He describes that as frustrating because he ordinarily solves problems by making things with his hands. He also reports interrupted sleep and embarrassment when he needed help fastening clothing. These are claimant descriptions, not separate diagnosed conditions. The file includes no dollar claim for every favor performed by relatives. For the story, the point is that recovery involved daily adjustments as well as bills and appointments. Kevin can acknowledge progress while still describing meaningful limitations. His ability to use a phone briefly or appear smiling in a photograph does not, by itself, quantify his tolerance for repeated gripping over a full fabrication shift.
+
+2026-04-03 — Camera review: the eleven-second gap
+  The supplied camera export shows the van approaching the junction, then jumps to a view after vehicles are already in contact. The sequence does not show the initial impact. A player reports an eleven-second interval between the neighboring encoded frames' times, but the case team has not authenticated whether that interval represents an original recording gap or an export process. The file name contains a download date, not the collision date. A brief windshield reflection appears near a visible lamp, making its color difficult to read. Neither side should treat that reflection as a definitive traffic signal. The fleet manager's explanation about continued local-card use leaves separate cloud storage unresolved. The practical bottleneck is therefore a provenance question as well as a missing-image question: what was created, what survived, who exported it, and what transformations occurred before the current file arrived?
+
+2026-04-09 — Rehabilitation physician excerpt: capacity varies by task
+  The fictional assessment describes improved comfort at rest but symptoms during sustained forearm rotation and forceful gripping. Kevin reports he can discuss a design by video call for longer than he can physically assemble it. The clinician records task-specific restrictions and recommends reassessment in the treatment plan. A later claim that he was entirely unable to perform any work would need to be reconciled with this account. The note also records disrupted sleep and a tendency to avoid using the arm after painful activity. It does not declare a permanent disability percentage or identify a definite end date for recovery. For the case story, a changing set of restrictions explains why revenue may return before physical function fully returns. It also explains why the claim needs evidence of what work was available, what Kevin actually performed, and what he paid others to do.
+
+2026-04-16 — Business project ledger: what the first estimate got wrong
+  Kevin's first spreadsheet called $19,800 in canceled contract prices “lost wages.” Review identified $4,800 in materials, shipping, and hired assistance that would have been incurred if those jobs proceeded. The working cancellation component is therefore $15,000, subject to support for the avoided costs and refund timing. The spreadsheet separately describes $24,600 in reduced earnings on projects retained at lower scope or completed at reduced margin. Incremental replacement labor totals $9,400, but the team must verify it has not already been deducted in that retained-project calculation. The working claim is $49,000. It is not simply every missing deposit compared with the previous year. This note demonstrates why a financially complicated case can still be explained: start with each project, identify the counterfactual supported by its agreement, and keep gross receipts, costs, benefits, and net impact in separate columns.
+
+2026-04-28 — Prior wrist history and credibility preparation
+  During follow-up questioning Kevin recalls a 2019 fall while moving a bicycle, followed by several weeks of a wrist brace. He says no fracture was diagnosed and that he returned to normal activity. His initial intake answer to “prior related injury” was no because he understood the question to mean a previous broken forearm. The file now records the older event rather than treating the original answer as complete. A later therapy intake also mentions occasional hand fatigue during long projects in 2025. Neither fact automatically proves that current symptoms existed before the crash. Neither should be ignored. The team needs the relevant earlier material and a clinician's explanation of what, if anything, it changes. Kevin's preparation should focus on accurately distinguishing the old wrist complaint, ordinary fatigue, and the present fracture-related limitations, without rehearsing a categorical denial unsupported by his own paperwork.
+
+2026-05-20 — Pleading milestone in the fictional action
+  The sample pleading alleges negligent vehicle operation against the van driver and delivery company and includes the following driver's conduct in the disputed collision sequence. The leasing relationship is pleaded based on the information then available, with responsibility contested. These are allegations in a fictional matter, not findings by a court. Defense responses deny the key liability allegations and reserve factual issues about signal phase, vehicle speed, causation, and claimed losses. The story uses docket DEMO-CV-2026-441 solely as a demonstration identifier. No actual case or public filing is implied. The filing milestone explains why discovery correspondence now appears alongside treatment requests. It also provides a natural division in the chronology: initial investigation and recovery came first; formal information exchange and preparation for an agreed mediation followed. No liability ruling is recorded by the snapshot.
+
+2026-06-02 — Return-to-work attempt and helper arrangement
+  Kevin tried a short installation shift with an independent helper completing the heavier assembly. He handled layout review and client discussion. After repeated fastening and adjustment tasks, he reported increased forearm discomfort and stopped the physical portion early. The helper finished the installation and invoiced by hours worked. The client paid the reduced project fee agreed earlier; the fee was not a fresh cancellation. This distinction matters to the work-loss worksheet because the same job could otherwise appear under cancellation, reduced revenue, and replacement labor. A defensible demonstration narrative can show improvement and continuing loss at once. Kevin is not described as bedridden or as having fully resumed his previous pace. The contemporaneous client email, helper invoice, calendar entry, and later clinical note each support different pieces of the account, with remaining reconciliation work stated explicitly.
+
+2026-06-10 — Benefit exhaustion is an accounting milestone, not the end of care
+  The received Northglass schedule reports $34,500 paid toward medical accounts and $15,500 paid as wage benefits, totaling $50,000. The payment dates do not necessarily match service dates. Later bills may relate to earlier care, and earlier bills may be adjusted after the schedule was issued. The case team therefore compares transaction references rather than sorting by date alone. Kevin continued attending appointments after the reported exhaustion and says the changing payer situation caused confusion about what he personally owed. This source does not claim a legal rule about exhaustion, further benefits, or reimbursement. It records the fictional administrator's position and its practical effect on the story. When presenting losses, the wage-benefit amount belongs in a separate credit analysis and medical payments belong in the provider-account reconciliation; adding them to gross losses would count money twice.
+
+2026-06-24 — Therapy attendance gap and competing explanations
+  The attendance list shows three missed sessions over two weeks. Kevin reports transportation difficulty after his partner changed shifts and a concern about out-of-pocket charges once the benefit letter arrived. One appointment was canceled by the practice because the therapist was unavailable. The defense later refers generally to a treatment gap, but that shorthand does not describe all three events accurately. The file currently lacks the latest attendance annotations, so the case team has requested them rather than assigning a single motive. A gap in attendance is relevant context and does not itself establish either recovery or unwillingness to improve. The claimant's explanations also require source support. This is a useful demo example because the open question is concrete: obtain the visit-level entry and connect it to the calendar and billing communications before drawing a broader conclusion.
+
+2026-07-30 — Delivery driver interview summary and disputed dispatch pressure
+  Noah Vale reports that he waited for a left-turn opportunity, believed he had a permitted arrow, and saw Kevin's car enter quickly from the opposite approach. He says his route was delayed but denies looking at a dispatch device during the turn. A dispatch message marked “last drop before depot” was sent shortly before the recorded incident window, but the timestamp alone does not show when the driver read it. The delivery company says dispatch messages can arrive while a vehicle is moving and that the system does not log eye attention. The claimant's draft theory of delivery pressure is therefore an allegation to investigate, not a proven explanation of the crash. Native interaction logs, policy materials, and driver testimony may clarify it. The evidence presently supports a question about timing; it does not establish distraction merely because a message existed.
+
+2026-08-05 — Neurology review of July 14 consultation and August 4 study
+  The fictional consultation records intermittent tingling in the ring and little fingers and discomfort with prolonged elbow and forearm positioning. The account distinguishes the patient's symptom description from the examination findings. It notes that further correlation with the fracture recovery and prior history may be useful. The subsequent diagnostic summary does not establish a permanent nerve injury in the supplied excerpt. Kevin worries that tingling means he will never return to precise work, but that fear is not recorded as the clinician's conclusion. The case team has the first consultation and study description, not a later signed explanation addressing the 2019 wrist history or the 2025 fatigue entry. A focused request for that missing discussion is still unmade. The story should neither dismiss a symptom because it is intermittent nor convert it into a definitive permanent condition without supporting evidence.
+
+2026-08-13 — Telematics and clocks: why a convincing animation would be premature
+  The vehicle data table samples position at intervals and contains one harsh-braking flag near the intersection. The camera overlay, portal receipt time, and phone image use different time representations. One uses UTC; another appears to be local time with an unknown offset. The consultant warns that lining up rows by the printed minute can create a false sequence. A café sign changing brightness may be a common visual event, but it is not yet validated as a timing anchor. The useful product behavior is to show the uncertainty and retain the original sources. A polished animation could make an untested alignment look authoritative. Until the missing export history and clock information are supplied, the case story can say the van turned, there were two contacts, and the critical signal remains disputed. It cannot responsibly claim a frame-accurate answer from periodic samples alone.
+
+2026-08-20 — Hatchback driver's account and the second impact question
+  Elise Rowan reports following at what she considered a normal distance on a dry roadway. She recalls brake lights, the van crossing, and Kevin's car pivoting before her contact with its rear. She does not know whether Kevin's arm was already injured. The rear damage appears less extensive than the side damage in the photographs, but that visual comparison is not a medical allocation. Kevin recalls pain after both sounds and cannot distinguish the instant of fracture. The consultant has not offered an injury-causation opinion. Keeping the second impact in the story adds a meaningful complication: an apparently simpler claim against the turning driver still involves disputed contribution, multiple insurance positions, and incomplete timing. It is not necessary to invent a precise percentage to explain why counsel needs the vehicle evidence and why both drivers may attend mediation.
+
+2026-08-28 — Coverage map and the danger of adding printed limits
+  The declarations excerpt reports a $1,000,000 primary combined single limit for the delivery interest. The broker mentions a possible $2,000,000 excess layer. The following driver's declarations report $100,000 per person and $300,000 per occurrence. These are different policies and different statements of coverage, not a confirmed $3,100,000 fund available to Kevin. The file lacks complete endorsements, confirmation that all relevant parties qualify, and the excess carrier's position. It also lacks a complete account of any other bodily injury claimant. A leasing contract may allocate responsibilities between businesses without establishing what an insurer will do in this occurrence. The case team tracks each open coverage question separately. This is central to the demo: a reader can understand why the conference is approaching yet the actual participating coverage remains uncertain, without being given a fabricated legal interpretation of unseen policies.
+
+2026-09-04 — Provisional reimbursement review and document gap
+  The Marigold notice lists $14,500, which matches the current total of its payments across the six provider accounts. That numeric match is useful but limited. It does not establish a final payoff, the legal basis of recovery, whether an item is related, or how later adjustments will be treated. The attached schedule includes no plan language. The team has requested the source documents and will compare each service entry with the existing bill table. A draft damages summary originally placed the $14,500 under additional expenses; review removed that duplicate presentation because the payments already sit inside the $83,460 gross charges. The file now carries an unknown final-lien field and an attributed provisional assertion. That combination makes the open question visible without erasing the information already known.
+
+2026-09-16 — September imaging excerpt and remaining treatment uncertainty
+  The authored imaging narrative describes interval healing changes around the fixation and notes an area the treating specialist wants to compare with prior studies. It does not declare a failed operation or recommend a particular revision procedure. Kevin reports continued pain when rotating the forearm under load, and the specialist is considering how the images relate to that complaint. A report can describe anatomy without determining the next treatment choice. The case team has received report text and an image index but still needs to verify the export's identifiers. The story should avoid saying that new imaging proves the need for another operation. Its present role is narrower: it explains why the clinician wants a further review, why the client remains uncertain about recovery, and why the mediation packet cannot yet contain a settled future-care plan.
+
+2026-09-18 — Specialist conversation: what “possible surgery” actually means here
+  Kevin and Dr. Mina Bell discussed continuing rehabilitation, reassessing the source of painful rotation, and the possibility of an operative evaluation if symptoms persist. The authored note says no option has been selected and no date is set. Kevin is anxious about another recovery period because he has gradually resumed some client work. He is also frustrated by how slowly tool tolerance has improved. The physician plans to compare imaging and reexamine him before making a more definite recommendation. Those facts support a current uncertainty, not a future event. For demo purposes, the open task is not merely “get surgery date,” which would assume the decision already exists. It is to clarify whether a procedure is recommended, what remains to decide, what the patient prefers, and when the decision may be revisited. The latest correspondence remains incomplete on those points.
+
+2026-09-22 — Missing functional addendum: absence is not a medical conclusion
+  The rehabilitation physician's office had mentioned a detailed work-capacity addendum in a scheduling exchange. Staff later confirmed it was never finalized. The signed visit note describes activities and symptoms but does not provide the task-by-task opinion counsel expected. A calendar reminder is not a report. The unavailable addendum should therefore remain an identified missing item, while the actual signed material stays usable as evidence of what it says. The next decision is whether existing records answer the conference questions or a new assessment should be arranged with the clinician. The case team cannot create a clinical conclusion by combining fragments of correspondence. This small administrative complication is important to the demo because a dashboard might otherwise label a request “received” when a file arrived, even though the specific document central to the request does not exist in finalized form.
+
+2026-09-22 — Deposition preparation: tell the sequence without filling memory gaps
+  Kevin can describe the direction he traveled, the light he remembers, the van's movement, two distinct sounds, and the pain he noticed afterward. He cannot identify an exact speed from memory or say with certainty which impact broke the arm. Preparation notes preserve those limits. They also identify topics that require careful, honest explanation: the emergency shorthand, the earlier wrist sprain, the pre-crash postponed job, and the distinction between computer work and physical installation. Kevin should be able to explain how a short activity differs from repeated work over a day without pretending he has never used the arm since the crash. This is a fictional attorney's preparation record, not instructions to a reader or an invitation to manufacture testimony. The demonstration value lies in showing how contradictions can be investigated and explained through source records rather than hidden from the chronology.
+
+2026-09-24 — Latest work attempt and why the missing therapy update matters
+  Kevin reports assembling a lightweight prototype with assistance, pausing several times when turning fasteners became painful. He says he completed the design review and labeling himself, while the helper handled cutting and final mounting. The client accepted the prototype, so the event demonstrates useful retained capacity as well as limitations. The case team has his email and the helper's invoice but not the therapist's contemporaneous work simulation result. A fair story should describe the work attempt as client-reported pending corroboration, not as a measured endurance test. The pending September notes may show improvement, plateau, or a more mixed pattern. Their absence matters because the treatment summary used in mediation should reflect the recent condition rather than only the dramatic initial injury. The open task thus connects an administrative request directly to an understandable decision.
+
+2026-09-25 — Financial reconciliation: one set of figures, several different questions
+  Gross medical charges are $83,460: Sable Harbor $32,900, Aldercrest $18,750, Brindle $5,260, Kestrel $13,500, Lantern $4,800, and Cobalt $8,250. Payments are $51,100, comprising Northglass medical $34,500, Marigold $14,500, and patient payments $2,100. Adjustments total $18,400 and posted balances $13,960; $51,100 plus $18,400 plus $13,960 equals $83,460. Those are a reconciliation of the same accounts, not four separate losses. The work-impact claim is $49,000 before review of a separately recorded $15,500 wage-benefit credit; subtracting that credit gives $33,500 as an arithmetic scenario only. Gross medical charges plus the claimed work impact equal $132,460, which is not a settlement valuation or a net recovery. Firm costs $2,475 and vehicle loss $15,400 are tracked separately. Marigold's provisional $14,500 reimbursement assertion overlaps payments already counted. Final payoff, future care, and legal treatment of offsets remain unresolved.
+
+2026-09-26 — Mediation agreement and fictional exchange schedule
+  The parties' fictional written arrangement sets a private mediation for October 22 and requests packet exchange by October 12. These dates arise from the authored agreement, not a stated court rule. No deadline is represented as controlling a real case. The mediator will receive a concise narrative, a chronology, the disputed-liability positions, the current treatment status, the economic worksheet, and a list of missing records. Avery plans to identify items supplemented after the exchange instead of quietly replacing earlier assertions. The delivery interests have agreed to participate, but the excess representative and lessor attendee remain unconfirmed. A productive session may require discussion of what can be resolved with current evidence and what needs further discovery. The calendar date is therefore a useful organizing event, not proof that the matter is ready to settle or that every insurer accepts the claim.
+
+2026-09-28 — Updated earnings interview: partial backup and a narrower claim
+  Kevin supplied two canceled commission agreements and several helper invoices. One canceled project involved a $3,000 deposit that was refunded after the original revenue spreadsheet was prepared; the refund is part of the project reconciliation, not an additional loss on top of the canceled contract's net margin. Other bank receipts relate to work substantially completed before February 11. The current $49,000 claim intentionally excludes an unsupported future-year projection that appeared in a personal planning worksheet. That projection remains background context and is not included in the damages arithmetic. The team still needs remaining helper receipts and a check that the $24,600 reduced-earnings component does not include the same $9,400 labor expense. The provisional total is a recorded assertion with a clear audit path, and its uncertainty should remain visible rather than being smoothed into a falsely precise final number.
+
+2026-09-29 — Defense themes and the evidence that can actually answer them
+  The defense themes currently include a disputed signal, possible claimant speed, the second vehicle's contribution, earlier wrist symptoms, gaps in therapy attendance, and incomplete earnings support. Each has a different evidentiary response. Signal data and authenticated footage may address right of way; medical and engineering opinions may address injury mechanics; old records may clarify prior symptoms; visit-level entries may explain missed appointments; project documents may reconcile financial loss. A moving personal story does not answer all those questions, and an unresolved question does not make every part of the claim unsupported. The demo narrative should let the audience see both. The fracture, operation, and posted bills are documented within the authored record, while responsibility, future treatment, and some accounting remain contested. That separation makes the case longer and more complicated without making it impossible to follow.
+
+2026-09-30 — Ninety-second story for a demonstration
+  Kevin made a living with his dominant right hand: drawing a display in the morning, then building it in the afternoon. On February 11 he says a delivery van turned across his green light on the way home. The van struck his car, and a following hatchback hit it again. Both bones in his right forearm broke. Plates went in the next day. Months later he can handle short design conversations and some light work, but sustained gripping and rotation remain difficult.
+  The obvious part of the story is the injury. The difficult part is proving the whole sequence and explaining the lasting impact. The van driver remembers a different signal. One witness cannot identify which light she saw; another looked up only after the first crash. The dashcam skips eleven critical seconds, and the available clocks do not yet line up. Kevin has resumed some work by hiring help, so his losses require project-level accounting rather than a single salary figure.
+  The parties are aiming for October 22 mediation. Before then, Avery needs a clearer treatment decision, the latest therapy observations, complete earnings support, the missing video history, and the actual coverage documents. The bills reconcile, but the final reimbursement claim does not. This is the demo's central question: what is holding a serious, understandable case back, who can answer it, and which original record supports each next step?
+
+2026-10-01 — Conference preparation: choices still open to the client
+  Kevin wants the conference to address his uncertainty about work and further treatment, not just the balance of bills. He has not decided whether to pursue a future procedure and has not given a final settlement instruction. Avery plans to explain how unresolved coverage and incomplete records may affect the discussion without promising a result. The worksheet contains no automated case value, pain-and-suffering multiplier, or invented probability of success. A draft opening can describe the human consequence and the strongest documented facts while acknowledging the genuine disputes. The next client meeting will review what has arrived, what remains missing, and what assumptions would otherwise be required. This note is an account of proposed preparation in the fictional file. It does not authorize the application or a reader to contact a carrier, send an offer, accept a term, or make a clinical decision for Kevin.
+
+2026-10-02 — Snapshot quality review: what is known, disputed, and missing
+  Known within this authored dataset: a three-vehicle crash occurred on February 11; the recorded fracture treatment included February 12 fixation; six provider accounts total $83,460; and the parties have scheduled a private mediation. Disputed: the controlling signal, speed claims, causal allocation between impacts, the significance of earlier symptoms, and parts of the work-loss calculation. Missing or incomplete: native signal-controller material, the impact segment's provenance, complete coverage endorsements, current therapy observations, a finalized functional addendum, complete helper receipts, and final reimbursement documentation. The absence of one item does not erase the others. All calendar entries use record dates no later than this snapshot and identify later appointments as scheduled. Document inventory entries below are metadata; substantive excerpts appear in dated notes and communications. The source trail is designed so a demonstration can move from a plain story to a specific record without presenting an unsupported conclusion as fact.
+
+SECTION 8 — CALENDAR EVENTS
+2026-02-18 10:00–10:30  Authorization and intake clarification call
+  Historical event. Avery and Kevin reviewed the initial account, contact preferences, and record authorizations. The call identified the uncertainty about the exact injury-producing impact and the need to retain original photographs. It did not resolve liability or contain an agreement on damages.
+
+2026-03-06 09:00–11:00  Investigator scene visit
+  Historical event. Photographs, sightline notes, and an orientation diagram were created weeks after the collision. The diagram records claimed paths and witness positions. Conditions observed on this visit are not automatically treated as identical to those on February 11.
+
+2026-05-21 14:00–14:30  Filing and service receipt review
+  Historical event. The team confirmed receipts in the fictional demonstration docket and marked the associated administrative task completed. No merits ruling occurred. The event is included to distinguish procedural progress from resolution of the underlying disputes.
+
+2026-08-25 11:00–12:00  Preliminary reconstruction conference
+  Historical event. The consultant reviewed surviving material and identified timing limitations, a missing segment, and the need for native data. No final speed, fault allocation, or medical causation opinion was issued. The conference generated investigation questions, not a completed expert report.
+
+2026-09-26 16:00–16:30  Private mediation date reserved
+  Scheduling record created September 26. Future session scheduled for 2026-10-22, 09:30–16:30, by fictional party agreement. Attendance remains to be confirmed for the possible excess carrier and leasing company. The event date records when the reservation was made, not when mediation occurred.
+
+2026-09-30 13:00–13:30  Client preparation appointment reserved
+  Scheduling record created September 30. Future client conference scheduled for 2026-10-09, 13:00–14:00. Planned topics are the current symptom account, outstanding project receipts, treatment uncertainty, and the client's questions about the mediation process. No settlement authority is recorded in this reservation.
+
+2026-10-01 09:00–09:15  Specialist follow-up tentatively held
+  Scheduling record created October 1. Future appointment tentatively held for 2026-10-12, 10:00–10:30, pending Kevin's confirmation. This is an examination appointment, not a reserved revision operation. It may help resolve the missing treatment decision if it goes ahead.
+
+2026-10-02 15:00–15:30  Packet exchange and internal readiness review scheduled
+  Scheduling record created October 2. Future packet exchange planned for 2026-10-12 under the fictional parties' written arrangement; internal readiness review planned for 2026-10-15. These are distinct from the task targets used by the dashboard to prioritize follow-up work.
+
+SECTION 9 — DOCUMENTS
+Accident materials folder — metadata only
+  Inventory lists a collision report summary, scene photographs, claimant phone originals, van photographs, hatchback photographs, and the investigator's orientation diagram. The underlying files are not attached to this text fixture. Only the expressly authored excerpts in dated notes are substantive source content for the demo. Inventory presence alone does not establish that every page or photograph has been reviewed.
+
+Vehicle recording folder — metadata only
+  Inventory lists the received portal clip, a telematics spreadsheet, the fleet correspondence, and a pending cloud-support reference. There is no recovered impact segment or authenticated native full recording in this inventory. A filename suggesting a complete trip does not establish that the contents are complete. Export history and clock configuration remain open items.
+
+Medical records folder — metadata only
+  Inventory lists six provider subfolders, authorizations, report indexes, and account ledgers. The fictional treatment narrative is set out in the dated excerpts. The inventory does not supply an additional specialist opinion or final functional addendum. No final discharge, permanent impairment determination, or selected revision procedure is represented as contained in an unseen attachment.
+
+Earnings folder — metadata only
+  Inventory lists commission agreements, the partial helper invoice set, the working project ledger, benefit transactions, and selected bank entries. It does not imply a complete tax return or complete bookkeeping export. A draft future-year forecast exists only as background and is excluded from the claimed past total. Receipt and reconciliation are tracked as separate steps.
+
+Coverage folder — metadata only
+  Inventory lists primary and hatchback declaration excerpts, broker correspondence, the excess notice acknowledgment, the partial lease, and pending endorsement requests. No complete excess policy is supplied by this text file. The field “unknown” for excess applicability reflects that gap; it does not mean no policy exists or that a denial has been issued.
+
+Reimbursement folder — metadata only
+  Inventory lists the provisional Marigold notice and a request for supporting plan documents. There is no final payoff letter, agreement to reduce an asserted amount, or authority to disburse funds. The provisional assertion overlaps payments already included in the medical reconciliation. The inventory does not convert an asserted position into an accepted obligation.
+
+Litigation folder — metadata only
+  Inventory lists fictional pleadings, responses, service receipts, witness interview memoranda, and the demonstration docket index. All are authored props and do not correspond to a real court file. The text narratives describe allegations and milestones; no liability judgment, evidentiary ruling, or statutory deadline is invented from the inventory labels.
+
+Mediation folder — metadata only
+  Inventory lists the October 22 reservation, draft exchange arrangement, narrative outline, open-issues list, and working damages worksheet. Drafts are not sent offers, accepted terms, or client instructions. The demo snapshot ends October 2; it includes no fictional result of the future conference and no representation that missing evidence arrived afterward.

@@ -1,0 +1,55 @@
+SYNTHETIC DEMONSTRATION MATTER — all people, providers, events, and amounts are fictional.
+Export date: 2026-10-02
+
+SECTION 1 — MATTER HEADER
+Matter number: DEMO-ETHAN-005
+Client: Ethan Brooks - Dog Bite
+Description: Ethan Brooks — neighborhood dog bite with a disputed account of the gate being open.
+Matter stage: Treatment
+Status: Open
+Responsible attorney: Avery Chen
+
+SECTION 2 — CUSTOM FIELDS
+Date of Incident
+  2026-09-14
+
+Case Summary
+  Ethan says a dog ran through an open yard gate and bit his right calf while he was walking on the sidewalk. The owner says a visitor left the gate open. Ethan received wound care and has a follow-up appointment to document healing. The homeowner insurer has acknowledged the claim but has not confirmed coverage.
+
+Treatment Status
+  Right calf puncture wounds treated; healing and possible scarring remain under review.
+
+Medical Specials To Date
+  $2,760.00 recorded charges; payment status unknown.
+
+Policy Limits
+  Unknown
+
+SECTION 3 — CONTACTS
+CLIENT
+  Ethan Brooks - Dog Bite — Fictional client
+
+MEDICAL PROVIDERS
+  Cedar Bend Urgent Care — Fictional treating provider
+    Email: records@cedarbend.example.invalid
+
+SECTION 4 — TASKS
+2026-10-06 — By medical provider: Cedar Bend Urgent Care — Updated wound-care notes
+    Request the follow-up assessment and dated photographs; no response recorded.
+    Assigned: Avery Chen | Status: Pending
+
+2026-10-07 — Obtain homeowner coverage confirmation
+    Ask the insurer for its written coverage position and policy information.
+    Assigned: Avery Chen | Status: Pending
+
+SECTION 5 — COMMUNICATIONS
+2026-09-29  Avery Chen > Cedar Bend Urgent Care
+  Wound-care notes — Please provide the follow-up assessment and any photographs authorized for release.
+
+SECTION 6 — NOTES
+2026-09-30 — Client follow-up
+  Ethan reports right calf tenderness while walking. No permanent scar assessment is recorded. The claim does not yet have a confirmed coverage decision or settlement offer.
+
+SECTION 7 — CALENDAR EVENTS
+2026-10-07 11:00–11:30  Internal claim review
+  Review medical records and insurer response. This is a demo follow-up target, not a legal deadline.

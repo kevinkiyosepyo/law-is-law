@@ -5,7 +5,7 @@ import { resolve } from "node:path";
 import express from "express";
 import { Store } from "./store.ts";
 import { createApp } from "./app.ts";
-import { loadSample } from "./sample.ts";
+import { seedSamples } from "./sample.ts";
 
 if (existsSync(".env")) loadEnvFile(".env");
 const port = Number(process.env.PORT || 4310);
@@ -13,8 +13,7 @@ if (!Number.isInteger(port) || port < 1024 || port > 65535)
   throw new Error("PORT must be between 1024 and 65535.");
 const origin = `http://127.0.0.1:${port}`;
 const store = new Store(resolve(".data/dashboard.sqlite"));
-if (!store.listMatters().some((m) => m.sourceMode === "sample"))
-  store.saveMatter(await loadSample());
+seedSamples(store);
 const bootstrapToken = randomBytes(32).toString("base64url");
 mkdirSync(".data", { recursive: true, mode: 0o700 });
 writeFileSync(

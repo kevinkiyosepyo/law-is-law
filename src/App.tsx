@@ -30,6 +30,7 @@ import {
   LockKeyhole,
   LogOut,
   Menu,
+  Mail,
   Plus,
   RefreshCw,
   Search,
@@ -38,6 +39,7 @@ import {
   Sparkles,
   Upload,
   Users,
+  Wallet,
   X,
 } from "lucide-react";
 import type {
@@ -50,13 +52,44 @@ import type {
   SourceRecord,
 } from "../shared/types";
 
-type View = "overview" | "waiting" | "evidence" | "sharing" | "connection";
+import { shortSummary } from "../shared/short-summary";
+import { InjuryMap } from "./InjuryMap";
+import { Finances } from "./Finances";
+import { MyChart } from "./MyChart";
+import { emptyChartSession, type ChartSession } from "../shared/mychart";
+import { AllCases, ImportMatterDialog, type DemoMatter } from "./AllCases";
+import {
+  Integrations,
+  StatusUpdatesPreview,
+  UpdateDialog,
+  sampleDemoEmail,
+  sampleDemoEmails,
+  type DemoConnection,
+  type DemoEmail,
+  type DemoOutcome,
+  type DemoCheck,
+} from "./Integrations";
+
+type View =
+  | "overview"
+  | "cases"
+  | "waiting"
+  | "evidence"
+  | "finances"
+  | "mychart"
+  | "sharing"
+  | "integrations"
+  | "connection";
 const viewNames: Record<View, string> = {
   overview: "Matter overview",
+  cases: "All Cases",
   waiting: "Waiting Room",
   evidence: "Evidence library",
+  finances: "Matter finances",
+  mychart: "MyChart",
   sharing: "Provider sharing",
-  connection: "Connections & import",
+  integrations: "Integrations",
+  connection: "Import New Case",
 };
 const statusNames: Record<Blocker["status"], string> = {
   awaiting_response: "Awaiting response",
@@ -245,7 +278,11 @@ function AttorneyApp() {
       const existing = await api<{ authenticated: boolean }>("/api/session");
       if (existing.authenticated) {
         if (token)
-          history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
+          history.replaceState(
+            null,
+            "",
+            `${window.location.pathname}${window.location.search}`,
+          );
         if (active) setAuthenticated(true);
         return;
       }
@@ -320,14 +357,13 @@ function Login({
       <div className="login-story">
         <Brand />
         <div className="login-headline">
-          <span className="eyebrow light">EVERY MATTER, MOVING FORWARD</span>
+          <span className="eyebrow light">PERSONAL INJURY CASES</span>
           <h1>
-            A clear picture.
-            <br />A clear next step.
+            See what's holding
+            <br />up your case.
           </h1>
           <p>
-            Understand what is holding up a case, who you are waiting on, and
-            what comes next.
+            Track open requests and review the records behind each case.
           </p>
           <div className="login-signal">
             <span className="pulse-dot" /> Evidence behind every finding.
@@ -391,6 +427,20 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
   const [notice, setNotice] = useState("");
   const [mobileOpen, setMobileOpen] = useState(false);
   const [revision, setRevision] = useState(0);
+  const [demoConnections, setDemoConnections] = useState<
+    Record<DemoConnection, boolean>
+  >({
+    chatgpt: false,
+    gmail: false,
+    slack: false,
+  });
+  const [demoEmail, setDemoEmail] = useState<DemoEmail>(sampleDemoEmail);
+  const [demoOutcome, setDemoOutcome] = useState<DemoOutcome>("processing");
+  const [demoCheck, setDemoCheck] = useState<DemoCheck>(null);
+  const [showUpdateDialog, setShowUpdateDialog] = useState(false);
+  const [demoMatters, setDemoMatters] = useState<DemoMatter[]>([]);
+  const [showImportDialog, setShowImportDialog] = useState(false);
+  const [chartSessions, setChartSessions] = useState<Record<string, ChartSession>>({});
   async function loadMatters(preferred?: string) {
     const result = await api<{ matters: MatterSummary[] }>("/api/matters");
     setMatters(result.matters);
@@ -434,6 +484,10 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
       current = false;
     };
   }, [selected, revision]);
+  useEffect(() => {
+    setDemoCheck(null);
+    setShowUpdateDialog(false);
+  }, [selected]);
   useEffect(() => {
     if (!notice) return;
     const timer = setTimeout(() => setNotice(""), 6000);
@@ -496,7 +550,11 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
     { id: "overview" as View, label: "Overview", icon: LayoutDashboard },
     { id: "waiting" as View, label: "Waiting Room", icon: Clock3 },
     { id: "evidence" as View, label: "Evidence", icon: FileText },
+    { id: "finances" as View, label: "Finances", icon: Wallet },
+    { id: "mychart" as View, label: "MyChart", icon: Activity },
     { id: "sharing" as View, label: "Provider sharing", icon: Users },
+    { id: "integrations" as View, label: "Integrations", icon: Mail },
+    { id: "cases" as View, label: "All Cases", icon: FolderOpen },
   ];
   return (
     <div className="app-shell">
@@ -512,7 +570,7 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
         <div className="workspace-label">
           <span className="workspace-avatar">PI</span>
           <span>
-            Personal Injury<span>Case intelligence workspace</span>
+            Personal Injury<span>Case workspace</span>
           </span>
           <ChevronDown size={13} />
         </div>
@@ -522,6 +580,7 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
             <button
               key={item.id}
               className={`nav-item ${view === item.id ? "active" : ""}`}
+              aria-current={view === item.id ? "page" : undefined}
               onClick={() => navigate(item.id)}
             >
               <item.icon size={19} />
@@ -536,12 +595,12 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
           <div className="sidebar-note">
             <div>
               <ShieldCheck size={17} />
-              <span>Evidence first. Always.</span>
+              <span>Check the source</span>
             </div>
             <p>
-              Trace findings to records.
+              Open the records behind each finding.
               <br />
-              Move forward with context.
+              Review them before acting.
             </p>
           </div>
           <button
@@ -549,7 +608,7 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
             onClick={() => navigate("connection")}
           >
             <Settings2 size={18} />
-            <span>Connections & import</span>
+            <span>Import New Case</span>
           </button>
           <div className="sidebar-profile">
             <span className="profile-avatar">AW</span>
@@ -593,9 +652,9 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
                 }}
               />
             </div>
-            <span className="readonly-label">
+            <button type="button" className="readonly-label">
               <LockKeyhole size={13} /> Read-only case data
-            </span>
+            </button>
           </div>
         </header>
         <main className="main-content">
@@ -608,80 +667,136 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
               {notice}
             </div>
           )}
-          <div className="page-heading">
-            <div>
-              <div className="eyebrow">YOUR MATTERS, IN FOCUS</div>
-              <h1>{viewNames[view]}</h1>
-              <p>
-                {view === "overview"
-                  ? "The full picture. The open questions. Your next move."
-                  : view === "waiting"
-                    ? "Know who you are waiting on, and what to do next."
-                    : view === "evidence"
-                      ? "The source material behind your case, all in one place."
-                      : view === "sharing"
-                        ? "Give each provider a clear, attorney-approved view."
-                        : "Bring your case records together, on your terms."}
-              </p>
+          <div
+            className={`matter-intro ${view === "overview" && matter && !loading ? "has-injury-map" : ""} ${view === "cases" ? "cases-intro" : ""}`}
+          >
+            <div className="page-heading">
+              <div>
+                <div className="eyebrow">YOUR CASES</div>
+                <h1>{viewNames[view]}</h1>
+                <p>
+                  {view === "overview"
+                    ? "Review open requests and see what needs attention."
+                    : view === "cases"
+                      ? "(Attorney / Lawyer view only)"
+                    : view === "waiting"
+                      ? "Know who you are waiting on, and what to do next."
+                      : view === "evidence"
+                        ? "The source material behind your case, all in one place."
+                        : view === "finances"
+                          ? "Review medical bills and payments."
+                          : view === "mychart"
+                            ? "Review patient records and preview what the attorney receives."
+                          : view === "sharing"
+                            ? "Give each provider a clear, attorney-approved view."
+                            : view === "integrations"
+                              ? "Preview a daily inbox check and case updates."
+                              : "Import case records or connect Clio."}
+                </p>
+              </div>
+              {view === "cases" && (
+                <button className="button primary" onClick={() => setShowImportDialog(true)}>
+                  <Upload size={16} /> Import New Matters
+                </button>
+              )}
             </div>
-            <button
-              className="button secondary"
-              onClick={() => navigate("connection")}
-            >
-              <Plus size={16} />
-              Import matter
-            </button>
-          </div>
-          {view !== "connection" && (
-            <div className="matter-bar">
-              <div className="matter-select-wrap">
-                <div className="matter-avatar">
-                  {matter ? (
-                    initials(matter.clientName)
-                  ) : (
-                    <FolderOpen size={21} />
-                  )}
-                </div>
-                <div className="matter-select-label">
-                  <label htmlFor="matter-select">ACTIVE MATTER</label>
-                  <div className="select-wrapper">
-                    <select
-                      id="matter-select"
-                      aria-label="Select matter"
-                      value={selected}
-                      onChange={(e) => setSelected(e.target.value)}
-                    >
-                      {!matters.length && (
-                        <option value="">No matters imported</option>
-                      )}
-                      {matters.map((m) => (
-                        <option key={m.id} value={m.id}>
-                          {m.clientName} · {m.number}
-                        </option>
-                      ))}
-                    </select>
-                    <ChevronDown size={15} />
+            {view !== "connection" && view !== "integrations" && view !== "cases" && (
+              <div className="matter-bar">
+                <div className="matter-select-wrap">
+                  <div className="matter-avatar">
+                    {matter ? (
+                      initials(matter.clientName)
+                    ) : (
+                      <FolderOpen size={21} />
+                    )}
+                  </div>
+                  <div className="matter-select-label">
+                    <label htmlFor="matter-select">ACTIVE MATTER</label>
+                    <div className="select-wrapper">
+                      <select
+                        id="matter-select"
+                        aria-label="Select matter"
+                        value={selected}
+                        onChange={(e) => setSelected(e.target.value)}
+                      >
+                        {!matters.length && (
+                          <option value="">No matters imported</option>
+                        )}
+                        {matters.map((m) => (
+                          <option key={m.id} value={m.id}>
+                            {m.clientName} · {m.number}
+                          </option>
+                        ))}
+                      </select>
+                      <ChevronDown size={15} />
+                    </div>
                   </div>
                 </div>
+                <div className="matter-meta">
+                  {matter && (
+                    <>
+                      <Badge
+                        tone={
+                          matter.sourceMode === "sample" ? "sample" : "blue"
+                        }
+                      >
+                        <span className="badge-dot" />
+                        {originNames[matter.sourceMode]}
+                      </Badge>
+                      <span className="matter-asof">
+                        Records as of {date(matter.asOf, true)}
+                      </span>
+                    </>
+                  )}
+                </div>
               </div>
-              <div className="matter-meta">
-                {matter && (
-                  <>
-                    <Badge
-                      tone={matter.sourceMode === "sample" ? "sample" : "blue"}
-                    >
-                      <span className="badge-dot" />
-                      {originNames[matter.sourceMode]}
-                    </Badge>
-                    <span className="matter-asof">
-                      Records as of {date(matter.asOf, true)}
-                    </span>
-                  </>
-                )}
-              </div>
-            </div>
-          )}
-          {view === "connection" ? (
+            )}
+            {view === "overview" && matter && !loading && (
+              <InjuryMap key={matter.id} matter={matter} onSource={setSource} />
+            )}
+          </div>
+          {view === "cases" ? (
+            <AllCases
+              matters={matters}
+              demoMatters={demoMatters}
+              onOpenMatter={(id) => {
+                setSelected(id);
+                navigate("overview");
+              }}
+              onImport={() => setShowImportDialog(true)}
+            />
+          ) : view === "integrations" ? (
+            <Integrations
+              onOpenMyChart={() => navigate("mychart")}
+              myChartLoaded={!!chartSessions[selected]?.connected}
+              connections={demoConnections}
+              onToggleConnection={(key) => {
+                setDemoConnections((current) => ({
+                  ...current,
+                  [key]: !current[key],
+                }));
+                setDemoCheck(null);
+              }}
+              email={demoEmail}
+              onEmailChange={(next) => {
+                setDemoEmail(next);
+                setDemoCheck(null);
+              }}
+              outcome={demoOutcome}
+              onOutcomeChange={(next) => {
+                setDemoOutcome(next);
+                if (demoEmail.origin === "sample") setDemoEmail(sampleDemoEmails[next]);
+                setDemoCheck(null);
+              }}
+              check={demoCheck}
+              onPreviewUpdate={() => {
+                setDemoCheck("update");
+                setShowUpdateDialog(true);
+              }}
+              onPreviewEmpty={() => setDemoCheck("empty")}
+              matter={matter}
+            />
+          ) : view === "connection" ? (
             <Connection
               clio={clio}
               refreshing={refreshing}
@@ -699,9 +814,8 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
             <Busy label="Reading matter records…" />
           ) : !matter ? (
             <div className="panel">
-              <Empty title="Your next matter starts here">
-                Import a case export or connect Clio to build a source-backed
-                picture of your matter.
+              <Empty title="Add a matter">
+                Import a case export or connect Clio to view its records here.
               </Empty>
               <div className="center-action">
                 <button
@@ -725,6 +839,15 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
                 </div>
               )}
               {view === "overview" && (
+                <StatusUpdatesPreview
+                  check={demoCheck}
+                  email={demoEmail}
+                  outcome={demoOutcome}
+                  onOpenUpdate={() => setShowUpdateDialog(true)}
+                  onOpenIntegrations={() => navigate("integrations")}
+                />
+              )}
+              {view === "overview" && (
                 <Overview
                   matter={matter}
                   onSource={setSource}
@@ -742,21 +865,55 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
                   setSearch={setSearch}
                 />
               )}
+              {view === "mychart" && (
+                <MyChart
+                  key={matter.id}
+                  matter={matter}
+                  session={chartSessions[matter.id] ?? emptyChartSession}
+                  onChange={(update) => setChartSessions((current) => ({
+                    ...current,
+                    [matter.id]: update(current[matter.id] ?? emptyChartSession),
+                  }))}
+                  onSource={setSource}
+                />
+              )}
               {view === "sharing" && (
                 <Sharing key={matter.id} matter={matter} onSource={setSource} />
+              )}
+              {view === "finances" && (
+                <Finances
+                  key={matter.id}
+                  matter={matter}
+                  onSource={setSource}
+                  onImport={() => navigate("connection")}
+                />
               )}
             </>
           )}
           <footer className="page-footer">
             <span>Dashboard Ultra Pro Max</span>
             <span>
-              <ShieldCheck size={12} /> Evidence-backed. Attorney-led.
+              <ShieldCheck size={12} /> Review findings against the source records.
             </span>
           </footer>
         </main>
       </div>
       {source && (
         <EvidenceDrawer source={source} onClose={() => setSource(null)} />
+      )}
+      {showUpdateDialog && demoCheck === "update" && (
+        <UpdateDialog
+          email={demoEmail}
+          outcome={demoOutcome}
+          matter={matter}
+          onClose={() => setShowUpdateDialog(false)}
+        />
+      )}
+      {showImportDialog && (
+        <ImportMatterDialog
+          onClose={() => setShowImportDialog(false)}
+          onAdd={(next) => setDemoMatters((current) => [next, ...current])}
+        />
       )}
     </div>
   );
@@ -844,202 +1001,223 @@ function Overview({
         ))}
       </div>
       <div className="overview-grid">
-        <section className="panel blocker-panel">
-          <div className="panel-heading">
-            <div>
-              <h2>What’s holding this case up?</h2>
-              <p>Prioritized open items and a clear next step.</p>
-            </div>
-            <Badge tone="neutral">{blockers.length} open</Badge>
-          </div>
-          {blockers.length ? (
-            <div className="blocker-list">
-              {blockers.slice(0, 3).map((blocker, i) => (
-                <article className="blocker-card" key={blocker.id}>
-                  <div className="blocker-rank">
-                    {String(i + 1).padStart(2, "0")}
-                  </div>
-                  <div className="blocker-content">
-                    <div className="blocker-title-row">
-                      <h3>{blocker.title}</h3>
-                      <Badge
-                        tone={
-                          blocker.priority === "high"
-                            ? "coral"
-                            : blocker.priority === "medium"
-                              ? "amber"
-                              : "neutral"
-                        }
-                      >
-                        {blocker.priority} priority
-                      </Badge>
-                    </div>
-                    <p>{blocker.description}</p>
-                    <div className="blocker-details">
-                      <span className="status-dot" />
-                      <span>{statusNames[blocker.status]}</span>
-                      <span className="detail-divider">·</span>
-                      <Users size={12} />
-                      <span>{blocker.owner || "Owner not recorded"}</span>
-                    </div>
-                    <div className="next-action">
-                      <ArrowRight size={14} />
-                      <span>{blocker.nextAction}</span>
-                    </div>
-                    <Sources
-                      ids={blocker.sourceIds}
-                      sources={matter.sources}
-                      onOpen={onSource}
-                    />
-                  </div>
-                </article>
-              ))}
-            </div>
-          ) : (
-            <Empty
-              title="No blockers identified"
-              icon={<CheckCircle2 size={26} />}
-            >
-              No open blockers were identified in the imported records. This
-              does not confirm that the matter is complete.
-            </Empty>
-          )}
-          <button
-            className="panel-footer-link"
-            onClick={() => onNavigate("waiting")}
-          >
-            Open Waiting Room
-            <ArrowRight size={15} />
-          </button>
-        </section>
-        <section className="panel snapshot-panel">
-          <div className="panel-heading">
-            <div>
-              <h2>Case at a glance</h2>
-              <p>The facts, and what’s still unknown.</p>
-            </div>
-            <FolderOpen size={19} className="muted" />
-          </div>
-          <div className="case-summary">
-            <div className="case-stage">
-              <span className="eyebrow">CURRENT STAGE</span>
-              <Badge tone="blue">{matter.stage || "Not established"}</Badge>
-            </div>
-            <p>{matter.description}</p>
-            <div className="case-summary-meta">
-              <span>Incident date</span>
-              <strong>{date(matter.incidentDate, true)}</strong>
-            </div>
-            <div className="case-summary-meta">
-              <span>Responsible attorney</span>
-              <strong>{matter.attorney || "Not recorded"}</strong>
-            </div>
-          </div>
-          <div className="fact-groups">
-            {(["coverage", "treatment", "financial"] as const).map(
-              (category) => (
-                <div className="fact-group" key={category}>
-                  <h3>
-                    {category === "financial"
-                      ? "Recorded financials"
-                      : category}
-                  </h3>
-                  <CaseFacts
-                    category={category}
-                    matter={matter}
-                    onSource={onSource}
-                  />
-                </div>
-              ),
-            )}
-          </div>
-        </section>
-        <section className="panel activity-panel">
-          <div className="panel-heading">
-            <div>
-              <h2>Recent case activity</h2>
-              <p>A timeline drawn from the source records.</p>
-            </div>
-            <Activity size={19} className="muted" />
-          </div>
-          <div className="timeline">
-            {recentEvents.map((event) => (
-              <div className="timeline-item" key={event.id}>
-                <span className="timeline-marker">
-                  <FileText size={14} />
-                </span>
-                <div>
-                  <span className="timeline-date">
-                    {date(event.date, true)}
-                    <span>·</span>
-                    {event.category.replaceAll("_", " ")}
-                  </span>
-                  <h3>{event.title}</h3>
-                  <Sources
-                    ids={event.sourceIds}
-                    sources={matter.sources}
-                    onOpen={onSource}
-                    compact
-                  />
-                </div>
+        <div className="overview-primary-stack">
+          <section className="panel blocker-panel">
+            <div className="panel-heading">
+              <div>
+                <h2>What's holding this case up?</h2>
+                <p>Open requests, listed by priority.</p>
               </div>
-            ))}
-            {!recentEvents.length && (
-              <Empty title="No dated activity yet">
-                Dated events will appear here when they are available in the
-                case records.
+              <Badge tone="neutral">{blockers.length} open</Badge>
+            </div>
+            {blockers.length ? (
+              <div className="blocker-list">
+                {blockers.slice(0, 3).map((blocker, i) => (
+                  <article className="blocker-card" key={blocker.id}>
+                    <div className="blocker-rank">
+                      {String(i + 1).padStart(2, "0")}
+                    </div>
+                    <div className="blocker-content">
+                      <div className="blocker-title-row">
+                        <h3>{blocker.title}</h3>
+                        <Badge
+                          tone={
+                            blocker.priority === "high"
+                              ? "coral"
+                              : blocker.priority === "medium"
+                                ? "amber"
+                                : "neutral"
+                          }
+                        >
+                          {blocker.priority} priority
+                        </Badge>
+                      </div>
+                      <p>{blocker.description}</p>
+                      <div className="blocker-details">
+                        <span className="status-dot" />
+                        <span>{statusNames[blocker.status]}</span>
+                        <span className="detail-divider">·</span>
+                        <Users size={12} />
+                        <span>{blocker.owner || "Owner not recorded"}</span>
+                      </div>
+                      <div className="next-action">
+                        <ArrowRight size={14} />
+                        <span>{blocker.nextAction}</span>
+                      </div>
+                      <Sources
+                        ids={blocker.sourceIds}
+                        sources={matter.sources}
+                        onOpen={onSource}
+                      />
+                    </div>
+                  </article>
+                ))}
+              </div>
+            ) : (
+              <Empty
+                title="No blockers identified"
+                icon={<CheckCircle2 size={26} />}
+              >
+                No open blockers were identified in the imported records. This
+                does not confirm that the matter is complete.
               </Empty>
             )}
-          </div>
-        </section>
-        <section className="panel questions-panel">
-          <div className="panel-heading">
-            <div>
-              <h2>Still to establish</h2>
-              <p>Missing information is part of the picture.</p>
+            <button
+              className="panel-footer-link"
+              onClick={() => onNavigate("waiting")}
+            >
+              Open Waiting Room
+              <ArrowRight size={15} />
+            </button>
+          </section>
+          <section className="panel activity-panel">
+            <div className="panel-heading">
+              <div>
+                <h2>Recent case activity</h2>
+                <p>A timeline drawn from the source records.</p>
+              </div>
+              <Activity size={19} className="muted" />
             </div>
-            <HelpCircle size={19} className="muted" />
-          </div>
-          <div className="unknown-list">
-            {unknowns.length ? (
-              unknowns.slice(0, 5).map((fact) => (
-                <div key={fact.id} className="unknown-item">
-                  <span className="unknown-bullet">
-                    <HelpCircle size={15} />
+            <div className="timeline">
+              {recentEvents.map((event) => (
+                <div className="timeline-item" key={event.id}>
+                  <span className="timeline-marker">
+                    <FileText size={14} />
                   </span>
                   <div>
-                    <h3>{fact.label}</h3>
-                    <p>{fact.value}</p>
+                    <span className="timeline-date">
+                      {date(event.date, true)}
+                      <span>·</span>
+                      {event.category.replaceAll("_", " ")}
+                    </span>
+                    <h3>{event.title}</h3>
                     <Sources
-                      ids={fact.sourceIds}
+                      ids={event.sourceIds}
                       sources={matter.sources}
                       onOpen={onSource}
                       compact
                     />
                   </div>
                 </div>
-              ))
-            ) : (
-              <p className="subtle">
-                No unknown fields flagged by the current import. Review the
-                evidence for completeness.
-              </p>
+              ))}
+              {!recentEvents.length && (
+                <Empty title="No dated activity yet">
+                  Dated events will appear here when they are available in the
+                  case records.
+                </Empty>
+              )}
+            </div>
+          </section>
+        </div>
+        <div className="snapshot-stack">
+          <section className="panel short-summary-panel">
+            <div className="panel-heading">
+              <h2>Case summary</h2>
+            </div>
+            <div className="short-summary-body">
+              {shortSummary(matter.sources).map((line, index) => (
+                <div key={index}>
+                  <p>{line.text}</p>
+                  <Sources
+                    ids={line.sourceIds}
+                    sources={matter.sources}
+                    onOpen={onSource}
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
+          <section className="panel snapshot-panel">
+            <div className="panel-heading">
+              <div>
+                <h2>Case details</h2>
+                <p>Recorded facts and missing information.</p>
+              </div>
+              <FolderOpen size={19} className="muted" />
+            </div>
+            <div className="case-summary">
+              <div className="case-stage">
+                <span className="eyebrow">CURRENT STAGE</span>
+                <Badge tone="blue">{matter.stage || "Not established"}</Badge>
+              </div>
+              <p>{matter.description}</p>
+              <div className="case-summary-meta">
+                <span>Incident date</span>
+                <strong>{date(matter.incidentDate, true)}</strong>
+              </div>
+              <div className="case-summary-meta">
+                <span>Responsible attorney</span>
+                <strong>{matter.attorney || "Not recorded"}</strong>
+              </div>
+            </div>
+            <div className="fact-groups">
+              {(["coverage", "treatment", "financial"] as const).map(
+                (category) => (
+                  <div className="fact-group" key={category}>
+                    <h3>
+                      {category === "financial"
+                        ? "Recorded financials"
+                        : category}
+                    </h3>
+                    <CaseFacts
+                      category={category}
+                      matter={matter}
+                      onSource={onSource}
+                    />
+                  </div>
+                ),
+              )}
+            </div>
+          </section>
+          <section className="panel questions-panel">
+            <div className="panel-heading">
+              <div>
+                <h2>Still to establish</h2>
+                <p>Information still missing from the case records.</p>
+              </div>
+              <HelpCircle size={19} className="muted" />
+            </div>
+            <div className="unknown-list">
+              {unknowns.length ? (
+                unknowns.slice(0, 5).map((fact) => (
+                  <div key={fact.id} className="unknown-item">
+                    <span className="unknown-bullet">
+                      <HelpCircle size={15} />
+                    </span>
+                    <div>
+                      <h3>{fact.label}</h3>
+                      <p>{fact.value}</p>
+                      <Sources
+                        ids={fact.sourceIds}
+                        sources={matter.sources}
+                        onOpen={onSource}
+                        compact
+                      />
+                    </div>
+                  </div>
+                ))
+              ) : (
+                <p className="subtle">
+                  No unknown fields flagged by the current import. Review the
+                  evidence for completeness.
+                </p>
+              )}
+            </div>
+            {matter.warnings.length > 0 && (
+              <details className="data-notes">
+                <summary>
+                  <CircleAlert size={14} />
+                  Data notes ({matter.warnings.length})<ChevronDown size={14} />
+                </summary>
+                <ul>
+                  {matter.warnings.map((warning, i) => (
+                    <li key={i}>{warning}</li>
+                  ))}
+                </ul>
+              </details>
             )}
-          </div>
-          {matter.warnings.length > 0 && (
-            <details className="data-notes">
-              <summary>
-                <CircleAlert size={14} />
-                Data notes ({matter.warnings.length})<ChevronDown size={14} />
-              </summary>
-              <ul>
-                {matter.warnings.map((warning, i) => (
-                  <li key={i}>{warning}</li>
-                ))}
-              </ul>
-            </details>
-          )}
-        </section>
+          </section>
+        </div>
       </div>
     </>
   );
@@ -1195,8 +1373,8 @@ function WaitingRoom({
         <div>
           <h2>Outstanding requests & next actions</h2>
           <p>
-            Request status reflects the imported record. Follow-ups stay in your
-            hands.
+            Statuses come from the imported records. Choose which requests to
+            follow up on.
           </p>
         </div>
         <Badge tone="neutral">{matter.blockers.length} items</Badge>

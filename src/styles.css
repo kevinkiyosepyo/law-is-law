@@ -671,8 +671,16 @@ button:not(:disabled):active {
   font-size: 12px;
   white-space: nowrap;
   color: #909db3;
+  appearance: none;
+  background: none;
+  border: 0;
   border-left: 1px solid #e7ecf3;
-  padding-left: 20px;
+  padding: 0 0 0 20px;
+  cursor: default;
+  transition: none;
+}
+.readonly-label:not(:disabled):active {
+  transform: none;
 }
 .main-content {
   padding: 31px 35px 0;
@@ -893,6 +901,24 @@ button:not(:disabled):active {
   grid-template-columns: minmax(0, 1.52fr) minmax(0, 1fr);
   gap: 22px;
   align-items: start;
+}
+.overview-primary-stack,
+.snapshot-stack {
+  display: grid;
+  gap: 22px;
+  min-width: 0;
+}
+.short-summary-body {
+  padding: 20px 21px;
+  display: grid;
+  gap: 14px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+.short-summary-body p {
+  margin: 0 0 8px;
 }
 .panel {
   background: #fff;
@@ -2956,7 +2982,7 @@ button:not(:disabled):active {
   .overview-grid {
     grid-template-columns: 1fr;
   }
-  .snapshot-panel {
+  .snapshot-stack {
     grid-column: 1;
     grid-row: 2;
   }

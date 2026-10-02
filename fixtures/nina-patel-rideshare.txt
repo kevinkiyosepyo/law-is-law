@@ -1,0 +1,51 @@
+SYNTHETIC DEMONSTRATION MATTER — all people, providers, events, and amounts are fictional.
+Export date: 2026-10-02
+
+SECTION 1 — MATTER HEADER
+Matter number: DEMO-NINA-006
+Client: Nina Patel - Rideshare Collision
+Description: Nina Patel — rideshare passenger injured when the vehicle was rear-ended at a traffic light.
+Matter stage: Negotiation
+Status: Open
+Responsible attorney: Avery Chen
+
+SECTION 2 — CUSTOM FIELDS
+Date of Incident
+  2026-07-22
+
+Case Summary
+  Nina was a passenger in a fictional SwiftCab ride when another car struck it from behind at a red light. She reported neck and upper-back pain and completed a short course of physical therapy. The rear driver's insurer offered $8,000, which Nina has not accepted. The team is checking the final bill and confirming the rideshare trip record before discussing a response.
+
+Treatment Status
+  Physical therapy completed; final discharge summary requested.
+
+Medical Specials To Date
+  $4,320.00 recorded charges; final balance not confirmed.
+
+Policy Limits
+  Not recorded
+
+SECTION 3 — CONTACTS
+CLIENT
+  Nina Patel - Rideshare Collision — Fictional client
+
+MEDICAL PROVIDERS
+  Harbor Fern Physical Therapy — Fictional rehabilitation provider
+    Email: records@harborfern.example.invalid
+
+SECTION 4 — TASKS
+2026-10-05 — By medical provider: Harbor Fern Physical Therapy — Final bill and discharge summary
+    Confirm the final charges and obtain the discharge summary before reviewing the offer with Nina.
+    Assigned: Avery Chen | Status: Pending
+
+SECTION 5 — COMMUNICATIONS
+2026-09-29  Lantern Auto Claims > Avery Chen
+  Settlement offer — The fictional carrier offers $8,000 subject to a signed release. No acceptance or release is recorded.
+
+SECTION 6 — NOTES
+2026-10-01 — Settlement preparation
+  Nina reports improved neck and upper-back symptoms after therapy. She wants the final medical balance explained before making a decision. The $8,000 offer is neither an accepted settlement nor a payment.
+
+SECTION 7 — CALENDAR EVENTS
+2026-10-06 14:00–14:30  Client offer review
+  Discuss the offer after reviewing the final records. This is a demo appointment, not a legal deadline.

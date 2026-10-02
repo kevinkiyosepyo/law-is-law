@@ -1,0 +1,68 @@
+{
+  "matter": {
+    "id": "finances-fictional-demo-001",
+    "number": "FIN-DEMO-001",
+    "clientName": "Jordan Example · Financial demo",
+    "description": "Fictional demonstration of medical charges, payments, adjustments, and unresolved balances. Every person, provider, record, and amount is invented.",
+    "status": "Open",
+    "stage": "Treatment",
+    "asOf": "2026-10-02",
+    "attorney": "Demo attorney"
+  },
+  "providers": [
+    { "id": "demo-hospital", "name": "Maple Example Hospital" },
+    { "id": "demo-orthopedics", "name": "Cedar Example Orthopedics" },
+    { "id": "demo-pt", "name": "Willow Example Physical Therapy" },
+    { "id": "demo-imaging", "name": "Birch Example Imaging" }
+  ],
+  "sources": [
+    {
+      "id": "demo-provenance",
+      "type": "note",
+      "title": "Fictional financial demonstration — provenance and scope",
+      "date": "2026-10-02",
+      "text": "This is a fictional demonstration. Every person, provider, statement, payment, and amount in this matter is invented. The records describe cumulative medical billing snapshots as of the date on each source. A later snapshot from the same provider replaces the earlier snapshot; the snapshots are not separate bills to add together. Patient responsibility means the remaining amount explicitly assigned to the patient in the statement. An insurance denial does not by itself establish what the patient owes. Unknown means the amount has not been established in these demonstration records. No real balances, financial accounts, or insurance systems are connected.",
+      "locator": "Fictional demo · scope and provenance"
+    },
+    {
+      "id": "demo-hospital-previous",
+      "type": "expense",
+      "title": "Maple Example Hospital — prior medical billing snapshot",
+      "date": "2026-09-15",
+      "text": "Provider: Maple Example Hospital\nBilled: $18,640.25\nInsurance paid: $12,340.10\nPatient paid: $500.00\nAdjustments: $4,500.15\nOutstanding balance: $1,300.00\nPatient responsibility: $800.00\nInsurance pending: $500.00\nInsurance denied: $0.00\nStatus: pending\nFictional cumulative statement. The insurer has not yet posted the final $500.00 payment. The patient balance already confirmed by the statement is $800.00. This statement is superseded by the October 1 snapshot.",
+      "locator": "Fictional demo · hospital statement dated September 15, 2026"
+    },
+    {
+      "id": "demo-hospital-current",
+      "type": "expense",
+      "title": "Maple Example Hospital — confirmed medical billing snapshot",
+      "date": "2026-10-01",
+      "text": "Provider: Maple Example Hospital\nBilled: $18,640.25\nInsurance paid: $12,840.10\nPatient paid: $500.00\nAdjustments: $4,500.15\nOutstanding balance: $800.00\nPatient responsibility: $800.00\nInsurance pending: $0.00\nInsurance denied: $0.00\nStatus: confirmed\nFictional cumulative statement. All insurer payments and contractual adjustments shown above have posted. The remaining $800.00 is confirmed as the patient responsibility. This snapshot replaces the September 15 statement; do not add the two snapshots together.",
+      "locator": "Fictional demo · hospital statement dated October 1, 2026"
+    },
+    {
+      "id": "demo-orthopedics-current",
+      "type": "expense",
+      "title": "Cedar Example Orthopedics — insurance review in progress",
+      "date": "2026-10-01",
+      "text": "Provider: Cedar Example Orthopedics\nBilled: $12,450.00\nInsurance paid: $6,200.00\nPatient paid: $300.00\nAdjustments: $1,950.00\nOutstanding balance: $4,000.00\nPatient responsibility: $500.00\nInsurance pending: $2,500.00\nInsurance denied: $1,000.00\nStatus: pending\nFictional cumulative statement. Payments and adjustments have posted. Of the outstanding balance, $500.00 is the confirmed remaining patient responsibility and $2,500.00 is awaiting the insurer's first decision. The separate $1,000.00 denied amount is under appeal, with responsibility unresolved. It is not included in the confirmed patient responsibility, and it is not also counted in insurance pending. The appeal outcome is unknown.",
+      "locator": "Fictional demo · orthopedic statement and insurer summary dated October 1, 2026"
+    },
+    {
+      "id": "demo-pt-current",
+      "type": "expense",
+      "title": "Willow Example Physical Therapy — balance disputed",
+      "date": "2026-09-30",
+      "text": "Provider: Willow Example Physical Therapy\nBilled: $3,750.00\nInsurance paid: $1,800.00\nPatient paid: $150.00\nAdjustments: $300.00\nOutstanding balance: $1,500.00\nPatient responsibility: Unknown\nInsurance pending: $0.00\nInsurance denied: $1,200.00\nStatus: disputed\nFictional cumulative statement. The provider reports a $1,500.00 balance. A $1,200.00 insurer denial is under dispute and the remaining $300.00 has not been allocated between patient responsibility and further adjustment. No remaining patient amount is confirmed. The reported balance is not a final patient bill. The denied amount is a subset of the reported outstanding balance, not an additional charge.",
+      "locator": "Fictional demo · physical therapy account summary dated September 30, 2026"
+    },
+    {
+      "id": "demo-imaging-current",
+      "type": "expense",
+      "title": "Birch Example Imaging — payments and responsibility unknown",
+      "date": "2026-09-29",
+      "text": "Provider: Birch Example Imaging\nBilled: $1,275.50\nInsurance paid: Unknown\nPatient paid: Unknown\nAdjustments: Unknown\nOutstanding balance: Unknown\nPatient responsibility: Unknown\nInsurance pending: Unknown\nInsurance denied: Unknown\nStatus: pending\nFictional cumulative charge record. Only the billed amount is available. An itemized statement, payment history, and insurer explanation of benefits have been requested. No amount owed or unpaid may be inferred from the charge alone. Missing payment information is not a zero payment.",
+      "locator": "Fictional demo · imaging charge record dated September 29, 2026"
+    }
+  ]
+}

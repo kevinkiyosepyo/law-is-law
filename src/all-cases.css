@@ -1,0 +1,58 @@
+.all-cases-page { display: flex; flex-direction: column; gap: 20px; }
+.all-cases-intro { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; }
+.all-cases-intro .eyebrow { font-size: 10px; }
+.all-cases-intro h2 { font-size: 18px; margin-top: 5px; }
+.all-cases-intro p { color: #8794aa; font-size: 12px; margin-top: 5px; }
+.all-cases-total { color: #6e7f9a; font-size: 11px; font-weight: 700; background: #eaf0fb; border-radius: 99px; padding: 7px 11px; white-space: nowrap; }
+.all-cases-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 17px; }
+.all-case-card { display: flex; flex-direction: column; min-width: 0; min-height: 260px; background: #fff; border: 1px solid #e4e9f2; border-radius: 10px; padding: 20px; box-shadow: 0 3px 9px #243a6508; }
+.all-case-card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; margin-bottom: 20px; }
+.all-case-icon { display: grid; place-items: center; width: 42px; height: 42px; color: #5270d7; background: #edf2ff; border-radius: 10px; }
+.all-case-icon.demo { color: #835cb6; background: #f5effb; }
+.all-case-origin { color: #687fba; background: #edf2ff; border-radius: 99px; padding: 5px 8px; font-size: 10px; font-weight: 700; white-space: nowrap; }
+.all-case-origin.sample { color: #aa8639; background: #fff8e8; }
+.all-case-origin.demo { color: #8b62b3; background: #f6effc; }
+.all-case-number { color: #91a0b8; font-size: 10px; font-weight: 750; letter-spacing: 1px; text-transform: uppercase; }
+.all-case-card h3 { color: #263650; font-size: 16px; margin: 5px 0 19px; overflow-wrap: anywhere; }
+.all-case-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; border-top: 1px solid #edf0f5; padding-top: 15px; margin-top: auto; }
+.all-case-meta > div { display: grid; gap: 4px; }
+.all-case-meta span { color: #9ba7ba; font-size: 10px; }
+.all-case-meta strong { color: #566783; font-size: 12px; font-weight: 650; }
+.all-case-open { display: flex; align-items: center; justify-content: space-between; gap: 10px; border: 0; border-top: 1px solid #edf0f5; background: transparent; width: 100%; padding: 16px 0 0; margin-top: 16px; text-align: left; color: #4866cd; font-size: 12px; font-weight: 700; }
+.all-case-open:hover { color: #2e4ab5; }
+.all-cases-group-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-top: 5px; }
+.all-cases-group-heading h2 { font-size: 15px; }
+.all-cases-group-heading span { color: #99a6ba; font-size: 11px; }
+.all-case-file-list { display: grid; gap: 7px; background: #fafbff; border: 1px solid #e9edf5; border-radius: 7px; padding: 11px; max-height: 102px; overflow: auto; margin-top: auto; }
+.all-case-file-list > span { color: #64748f; font-size: 11px; overflow-wrap: anywhere; }
+.all-case-file-list small { color: #a2aec0; }
+.all-case-demo-note { display: flex; align-items: flex-start; gap: 6px; color: #8495a9; font-size: 10px; line-height: 1.55; margin-top: 14px; }
+.all-case-demo-note svg { color: #6ea989; }
+.all-cases-empty { text-align: center; padding: 45px 20px; }
+.all-cases-empty > svg { color: #8498ca; }
+.all-cases-empty h2 { font-size: 17px; margin-top: 10px; }
+.all-cases-empty p { color: #8794a9; font-size: 12px; margin: 5px 0 18px; }
+.case-import-backdrop { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 20px; background: #101b35a8; }
+.case-import-dialog { width: min(100%, 580px); max-height: 90dvh; overflow: auto; background: #fff; border-radius: 12px; box-shadow: 0 26px 70px #07142c60; }
+.case-import-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 15px; padding: 23px 26px 18px; border-bottom: 1px solid #e9edf5; }
+.case-import-header h2 { font-size: 20px; margin-top: 5px; }
+.case-import-dialog form { padding: 20px 26px 0; }
+.case-import-description { color: #74829a; font-size: 12px; line-height: 1.7; margin-bottom: 19px; }
+.case-import-label { display: block; color: #63718a; font-size: 11px; font-weight: 700; margin-bottom: 7px; }
+.case-import-title-input { width: 100%; border: 1px solid #dfe5ef; border-radius: 7px; padding: 11px 12px; color: #30415f; font-size: 12px; background: #fff; }
+.case-import-dropzone { display: flex; align-items: center; flex-direction: column; border: 1px dashed #bdcbea; background: #fafcff; border-radius: 9px; padding: 25px 15px; margin-top: 19px; text-align: center; }
+.case-import-dropzone.dragging { border-color: #4f6bcf; background: #f0f4ff; }
+.case-import-dropzone > span { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 10px; background: #ecf2ff; color: #5774d2; margin-bottom: 10px; }
+.case-import-dropzone strong { color: #435573; font-size: 13px; }
+.case-import-dropzone p { color: #8c9bb2; font-size: 11px; margin: 4px 0 13px; }
+.case-import-dropzone small { color: #9aa8bd; font-size: 10px; margin-top: 10px; }
+.case-import-selected { display: grid; gap: 8px; margin-top: 17px; }
+.case-import-selected > strong { color: #66758f; font-size: 11px; }
+.case-import-selected > div { display: flex; align-items: center; gap: 7px; color: #64748f; background: #f7f9fc; padding: 9px; border-radius: 6px; font-size: 11px; }
+.case-import-selected > div > span { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.case-import-selected small { color: #9da9ba; flex-shrink: 0; }
+.case-import-error { display: flex; align-items: center; gap: 6px; color: #b84f4f; font-size: 11px; margin-top: 12px; }
+.case-import-disclosure { color: #9aa7b8; font-size: 10px; line-height: 1.65; margin: 17px 0; }
+.case-import-footer { display: flex; justify-content: flex-end; gap: 9px; border-top: 1px solid #e9edf5; margin: 0 -26px; padding: 16px 26px; }
+@media (max-width: 1100px) { .all-cases-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 700px) { .cases-intro .page-heading { align-items: flex-start; flex-direction: column; } .cases-intro .page-heading > .button { align-self: flex-start; padding: 9px 13px; } .all-cases-grid { grid-template-columns: 1fr; } .all-cases-intro { align-items: flex-start; flex-direction: column; gap: 10px; } .all-cases-group-heading { flex-direction: column; } .case-import-header { padding: 20px; } .case-import-dialog form { padding: 18px 20px 0; } .case-import-footer { margin: 0 -20px; padding: 14px 20px; } }
