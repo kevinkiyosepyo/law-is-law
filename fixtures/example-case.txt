@@ -1,0 +1,55 @@
+SYNTHETIC DEMONSTRATION MATTER — all names and details are fictional.
+Export date: 2026-10-02
+
+SECTION 1 — MATTER HEADER
+Matter number: DEMO-204
+Client: Morgan Example
+Description: Morgan Example — bicycle collision
+Matter stage: Treatment
+Status: Open
+Responsible attorney: Avery Demo
+
+SECTION 2 — CUSTOM FIELDS
+Date of Incident
+  2026-08-12
+
+Policy Limits
+  Not recorded
+
+Treatment Status
+  Physical therapy ongoing per the latest provider update.
+
+Medical Specials To Date
+  $2,400.00 in recorded charges; payment status not supplied.
+
+Health Insurance or Lien Holder
+  Unknown
+
+SECTION 3 — CONTACTS
+CLIENT
+  Morgan Example — Client
+
+MEDICAL PROVIDERS
+  Example River Therapy — Physical therapy provider
+    Email: records@example.invalid
+
+SECTION 4 — TASKS
+2026-09-30 — By medical provider: Example River Therapy — Updated treatment notes
+    Updated notes requested; no response recorded.
+    Assigned: Avery Demo | Status: Pending
+
+2026-10-06 — Obtain employment records from client
+    Review documents supporting the client's recorded time off work.
+    Assigned: Avery Demo | Status: Pending
+
+SECTION 5 — COMMUNICATIONS
+2026-09-24  Avery Demo > Example River Therapy
+  Updated treatment notes — Please provide the recent physical therapy notes.
+
+SECTION 6 — NOTES
+2026-09-26 — Treatment update
+  The client reports continuing physical therapy. No discharge record supplied.
+
+SECTION 7 — CALENDAR EVENTS
+2026-10-06 10:00–10:30  File review
+  Review outstanding requests and confirm receipt of employment records.
