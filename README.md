@@ -1,5 +1,13 @@
 # Dashboard Ultra Pro Max
 
+## [Try the live demo →](https://law-is-law-demo.vercel.app/)
+
+**No login, password, or installation required.** Open the dashboard and try it yourself: explore a sample case, check its bottlenecks and Waiting Room, and follow the source links to the evidence.
+
+The public demo uses fictional cases only. Live integrations and real case imports are disabled.
+
+---
+
 A local personal-injury case dashboard for the Law-Di-Gras hackathon. Select a matter, see its recorded open tasks and waiting parties, inspect the original evidence, and approve a limited view for each treating provider.
 
 ## Run locally
