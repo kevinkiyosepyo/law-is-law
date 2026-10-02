@@ -25,7 +25,8 @@ writeFileSync(
 const app = createApp(store, {
   bootstrapToken,
   origin,
-  password: process.env.APP_PASSWORD,
+  // Shared local-demo default; use APP_PASSWORD for private case data.
+  password: process.env.APP_PASSWORD || "123",
 });
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(resolve("dist")));

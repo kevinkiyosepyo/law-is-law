@@ -11,7 +11,9 @@ npm install
 npm run dev
 ```
 
-Open the **private local access link** printed in the terminal. It signs you into the attorney workspace once; the browser keeps a 12-hour HttpOnly session. The app runs at `http://127.0.0.1:4310`. Restarting creates a new access link. Optionally copy `.env.example` to `.env` and set `APP_PASSWORD` to allow password sign-in.
+Open `http://127.0.0.1:4310` and sign in with `123`. This shared demo password works on fresh clones without an `.env` file. Before importing real case data, copy `.env.example` to `.env`, set a strong private `APP_PASSWORD`, and restart. An unset or empty `APP_PASSWORD` uses `123`.
+
+The private local access link printed in the terminal also signs you in once. Browser sessions last 12 hours; restarting creates a new link and ends existing sessions. The shared demo password is not suitable for public deployment.
 
 ```sh
 npm test
