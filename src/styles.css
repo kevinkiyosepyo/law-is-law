@@ -4025,3 +4025,1127 @@ button:not(:disabled):active {
     font-size: 12px;
   }
 }
+
+/* Case Health — a focused, 90-second matter brief. */
+.case-health-dashboard {
+  --health-ink: #17243b;
+  --health-muted: #7c899f;
+  --health-line: #e7ebf2;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 42px;
+}
+.case-health-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 176px;
+  border-radius: 16px;
+  padding: 30px 32px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 28px;
+  color: white;
+  background:
+    radial-gradient(circle at 78% 15%, #607df955 0, transparent 35%),
+    linear-gradient(135deg, #121f37 0%, #1d3154 62%, #263f69 100%);
+  box-shadow: 0 12px 34px #1726421a;
+}
+.case-health-hero-glow {
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  right: -90px;
+  top: -155px;
+  border-radius: 50%;
+  border: 45px solid #ffffff0a;
+}
+.case-health-hero-main,
+.case-health-brief {
+  position: relative;
+  z-index: 1;
+}
+.case-health-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  color: #d6deef;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.case-health-status > span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #55d09a;
+  box-shadow: 0 0 0 4px #55d09a1c;
+}
+.case-health-hero h2 {
+  color: white;
+  font-size: 32px;
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+.case-health-matter-number {
+  margin-top: 8px;
+  color: #9facc4;
+  font-size: 13px;
+}
+.case-health-brief {
+  width: 190px;
+  padding: 16px 18px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1px 9px;
+  align-items: center;
+  border: 1px solid #ffffff17;
+  border-radius: 11px;
+  background: #ffffff0c;
+  backdrop-filter: blur(8px);
+}
+.case-health-brief svg {
+  grid-row: 1 / 3;
+  color: #9eb1f8;
+}
+.case-health-brief span {
+  color: #aebbd0;
+  font-size: 12px;
+}
+.case-health-brief strong {
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+}
+.case-health-card {
+  background: #fff;
+  border: 1px solid var(--health-line);
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #26395407;
+}
+.case-health-summary {
+  margin-top: 18px;
+  padding: 22px 24px 0;
+}
+.case-health-section-heading {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.case-health-section-heading h2 {
+  margin-top: 2px;
+  color: var(--health-ink);
+  font-size: 16px;
+  line-height: 1.35;
+  letter-spacing: -0.3px;
+}
+.case-health-kicker {
+  display: block;
+  color: #99a5b7;
+  font-size: 10px;
+  line-height: 1.4;
+  font-weight: 700;
+  letter-spacing: 1.35px;
+}
+.case-health-updated {
+  color: #a0aabd;
+  font-size: 11px;
+}
+.case-health-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 18px;
+  border-top: 1px solid #edf0f5;
+}
+.case-health-metric {
+  padding: 21px 22px 23px 0;
+  position: relative;
+}
+.case-health-metric + .case-health-metric {
+  padding-left: 24px;
+  border-left: 1px solid #edf0f5;
+}
+.case-health-metric > span {
+  display: block;
+  color: #7f8ca1;
+  font-size: 12px;
+  font-weight: 600;
+}
+.case-health-metric > strong {
+  display: block;
+  margin-top: 7px;
+  overflow-wrap: anywhere;
+  color: #243451;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(21px, 2.3vw, 28px);
+  line-height: 1.2;
+  font-weight: 750;
+  letter-spacing: -0.8px;
+}
+.case-health-metric > small {
+  display: block;
+  margin-top: 6px;
+  color: #a4aebe;
+  font-size: 11px;
+}
+.case-health-top-grid,
+.case-health-bottom-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.85fr);
+  gap: 18px;
+  margin-top: 18px;
+  align-items: stretch;
+}
+.case-health-top-grid > .case-health-card,
+.case-health-bottom-grid > .case-health-card,
+.case-health-journey-card {
+  padding: 22px 24px;
+}
+.case-health-heading-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.case-health-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 9px;
+}
+.case-health-icon.coral {
+  color: #ca695d;
+  background: #fff0ed;
+}
+.case-health-icon.blue {
+  color: #5572d8;
+  background: #eef2ff;
+}
+.case-health-icon.purple {
+  color: #806eb1;
+  background: #f3effb;
+}
+.case-health-icon.amber {
+  color: #b78734;
+  background: #fff6e7;
+}
+.case-health-count {
+  min-width: 26px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  color: #c06054;
+  background: #fff2ef;
+  font-size: 12px;
+  font-weight: 700;
+}
+.case-health-attention-list {
+  margin-top: 14px;
+}
+.case-health-attention-item {
+  display: grid;
+  grid-template-columns: 10px minmax(0, 1fr);
+  gap: 11px;
+  padding: 16px 0;
+  border-top: 1px solid #edf0f5;
+}
+.case-health-priority-dot {
+  width: 8px;
+  height: 8px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: #6f8ad9;
+  box-shadow: 0 0 0 3px #6f8ad915;
+}
+.case-health-priority-dot.high {
+  background: #d86255;
+  box-shadow: 0 0 0 3px #d8625515;
+}
+.case-health-priority-dot.medium {
+  background: #d69a3d;
+  box-shadow: 0 0 0 3px #d69a3d16;
+}
+.case-health-item-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+.case-health-item-title h3 {
+  color: #31415b;
+  font-size: 13px;
+  font-weight: 700;
+}
+.case-health-attention-item p {
+  margin-top: 5px;
+  color: #8895a9;
+  font-size: 12px;
+  line-height: 1.65;
+}
+.case-health-priority {
+  flex-shrink: 0;
+  border-radius: 5px;
+  padding: 3px 6px;
+  color: #6d83b9;
+  background: #f0f4ff;
+  font-size: 10px;
+  font-weight: 650;
+}
+.case-health-priority.high {
+  color: #b75f55;
+  background: #fff0ed;
+}
+.case-health-priority.medium {
+  color: #a8792a;
+  background: #fff6e7;
+}
+.case-health-clear-state {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+  padding: 20px 0 4px;
+  border-top: 1px solid #edf0f5;
+  color: #579475;
+  font-size: 12px;
+}
+.case-health-changes {
+  display: flex;
+  flex-direction: column;
+}
+.case-health-change-total {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 21px;
+}
+.case-health-change-total strong {
+  color: #3757c4;
+  font-family: "Manrope", sans-serif;
+  font-size: 43px;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+.case-health-change-total span {
+  color: #74829a;
+  font-size: 12px;
+  font-weight: 600;
+}
+.case-health-latest-change {
+  margin-top: auto;
+  padding: 13px 14px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 10px;
+  border: 1px solid #e7ebf7;
+  border-radius: 8px;
+  background: #f8faff;
+}
+.case-health-latest-change span {
+  grid-column: 1 / 3;
+  color: #98a4b6;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.case-health-latest-change strong {
+  color: #475a79;
+  font-size: 12px;
+  font-weight: 650;
+}
+.case-health-latest-change small {
+  color: #8997ac;
+  font-size: 11px;
+}
+.case-health-journey-card {
+  margin-top: 18px;
+}
+.case-health-journey {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 27px 0 1px;
+  padding: 0;
+  list-style: none;
+}
+.case-health-journey > li {
+  min-width: 0;
+  display: flex;
+  align-items: flex-start;
+}
+.case-health-journey-step {
+  position: relative;
+  min-width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.case-health-journey-icon {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e3e8f0;
+  border-radius: 50%;
+  color: #76869f;
+  background: #f8fafc;
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+}
+.case-health-journey-step > strong {
+  margin-top: 9px;
+  color: #596a84;
+  font-size: 11px;
+  font-weight: 650;
+}
+.case-health-journey-step > small {
+  position: absolute;
+  top: 69px;
+  padding: 3px 6px;
+  border-radius: 5px;
+  color: #b85d52;
+  background: #fff0ed;
+  font-size: 9px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.case-health-journey > li.highlighted .case-health-journey-icon {
+  border-color: #7890e5;
+  color: #fff;
+  background: #5470d7;
+  box-shadow: 0 0 0 5px #5470d714;
+}
+.case-health-journey > li.highlighted .case-health-journey-step > strong {
+  color: #304da9;
+}
+.case-health-journey-line {
+  height: 43px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c2cad7;
+}
+.case-health-bottom-grid {
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+}
+.case-health-story,
+.case-health-documents {
+  margin-top: 14px;
+}
+.case-health-story-item {
+  min-height: 57px;
+  display: grid;
+  grid-template-columns: 50px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  border-top: 1px solid #edf0f5;
+}
+.case-health-story-item time {
+  color: #8390a4;
+  font-size: 11px;
+  font-weight: 650;
+}
+.case-health-story-item > div {
+  min-width: 0;
+}
+.case-health-story-item strong,
+.case-health-story-item span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.case-health-story-item strong {
+  color: #3f506b;
+  font-size: 12px;
+  font-weight: 650;
+}
+.case-health-story-item span {
+  margin-top: 3px;
+  color: #a0aabb;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+.case-health-story-item button {
+  border: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 0;
+  color: #6079c8;
+  background: transparent;
+  font-size: 11px;
+  font-weight: 650;
+}
+.case-health-story-item button:hover:not(:disabled) {
+  color: #3657c6;
+}
+.case-health-documents > div {
+  min-height: 57px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #edf0f5;
+}
+.case-health-documents > div > span {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+}
+.case-health-documents .complete > span {
+  color: #4c9a78;
+  background: #edf8f3;
+}
+.case-health-documents .missing > span {
+  color: #b78a40;
+  background: #fff6e7;
+}
+.case-health-documents strong,
+.case-health-documents small {
+  display: block;
+}
+.case-health-documents strong {
+  color: #455570;
+  font-size: 12px;
+  font-weight: 650;
+}
+.case-health-documents small {
+  margin-top: 3px;
+  color: #9ca7b8;
+  font-size: 10px;
+}
+.case-health-provider {
+  margin-top: 18px;
+  padding: 22px 25px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid #dfe5f1;
+  border-radius: 12px;
+  background: linear-gradient(110deg, #fbfcff 0%, #f3f6fd 100%);
+}
+.case-health-provider-icon {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #5a72be;
+  background: #e9eefd;
+}
+.case-health-provider h2 {
+  margin-top: 2px;
+  color: #263751;
+  font-size: 15px;
+}
+.case-health-provider p {
+  margin-top: 4px;
+  color: #8693a8;
+  font-size: 11px;
+  line-height: 1.55;
+}
+.case-health-provider button {
+  min-height: 39px;
+  padding: 9px 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 0;
+  border-radius: 7px;
+  color: white;
+  background: #283b5d;
+  font-size: 12px;
+  font-weight: 650;
+}
+.case-health-provider button:hover:not(:disabled) {
+  background: #1e2e4a;
+  box-shadow: 0 5px 14px #24375520;
+}
+@media (max-width: 900px) {
+  .case-health-top-grid,
+  .case-health-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+  .case-health-latest-change {
+    margin-top: 22px;
+  }
+}
+@media (max-width: 700px) {
+  .case-health-hero {
+    min-height: 0;
+    padding: 24px 21px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .case-health-hero h2 {
+    font-size: 27px;
+  }
+  .case-health-brief {
+    width: 100%;
+  }
+  .case-health-summary,
+  .case-health-top-grid > .case-health-card,
+  .case-health-bottom-grid > .case-health-card,
+  .case-health-journey-card {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .case-health-metrics {
+    grid-template-columns: 1fr;
+  }
+  .case-health-metric,
+  .case-health-metric + .case-health-metric {
+    padding: 17px 0;
+    border-left: 0;
+    border-top: 1px solid #edf0f5;
+  }
+  .case-health-metric:first-child {
+    border-top: 0;
+  }
+  .case-health-journey {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-top: 20px;
+  }
+  .case-health-journey > li {
+    min-height: 70px;
+    align-items: flex-start;
+  }
+  .case-health-journey-step {
+    min-width: 135px;
+    flex-direction: row;
+    gap: 12px;
+    text-align: left;
+  }
+  .case-health-journey-step > strong {
+    margin-top: 0;
+  }
+  .case-health-journey-step > small {
+    top: 38px;
+    left: 55px;
+  }
+  .case-health-journey-line {
+    height: 43px;
+    justify-content: flex-start;
+    transform: rotate(90deg);
+    transform-origin: center;
+  }
+  .case-health-provider {
+    grid-template-columns: auto 1fr;
+  }
+  .case-health-provider button {
+    grid-column: 1 / 3;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .case-health-section-heading {
+    align-items: flex-start;
+  }
+  .case-health-updated {
+    display: none;
+  }
+  .case-health-item-title {
+    display: block;
+  }
+  .case-health-priority {
+    display: inline-block;
+    margin-top: 6px;
+  }
+  .case-health-story-item {
+    grid-template-columns: 45px minmax(0, 1fr);
+  }
+  .case-health-story-item button {
+    grid-column: 2;
+    justify-self: start;
+    margin-top: -8px;
+  }
+}
+
+/* Accident — an independent, source-backed incident brief. */
+.accident-dashboard {
+  --accident-ink: #19263d;
+  --accident-muted: #8390a5;
+  --accident-line: #e7ebf2;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 42px;
+}
+.accident-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 152px;
+  padding: 28px 30px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 18px;
+  border-radius: 15px;
+  color: white;
+  background:
+    radial-gradient(circle at 88% 0%, #f0a45b38 0, transparent 34%),
+    linear-gradient(125deg, #16233a 0%, #263754 68%, #3c465d 100%);
+  box-shadow: 0 11px 30px #1b2d4b17;
+}
+.accident-hero::after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  right: -105px;
+  top: -137px;
+  border: 40px solid #ffffff0a;
+  border-radius: 50%;
+}
+.accident-hero-icon {
+  position: relative;
+  z-index: 1;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff1a;
+  border-radius: 14px;
+  color: #ffd1a3;
+  background: #ffffff0c;
+}
+.accident-hero-copy {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+}
+.accident-kicker {
+  display: block;
+  color: #98a6bb;
+  font-size: 10px;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+.accident-hero .accident-kicker {
+  color: #f1bc87;
+}
+.accident-hero h2 {
+  margin-top: 5px;
+  overflow: hidden;
+  color: white;
+  font-size: 26px;
+  line-height: 1.25;
+  letter-spacing: -0.75px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.accident-hero-copy p {
+  margin-top: 7px;
+  color: #aeb9cc;
+  font-size: 12px;
+}
+.accident-hero-date {
+  position: relative;
+  z-index: 1;
+  min-width: 160px;
+  padding: 14px 16px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2px 8px;
+  align-items: center;
+  border: 1px solid #ffffff17;
+  border-radius: 10px;
+  background: #ffffff0b;
+}
+.accident-hero-date svg {
+  grid-row: 1 / 3;
+  color: #f2b77c;
+}
+.accident-hero-date span {
+  color: #a8b5ca;
+  font-size: 10px;
+}
+.accident-hero-date strong {
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+}
+.accident-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 13px;
+  margin-top: 17px;
+}
+.accident-detail-card {
+  min-width: 0;
+  min-height: 119px;
+  padding: 17px;
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  border: 1px solid var(--accident-line);
+  border-radius: 11px;
+  background: #fff;
+  box-shadow: 0 3px 12px #26395406;
+}
+.accident-detail-card.missing {
+  border-style: dashed;
+  background: #fffdfa;
+}
+.accident-detail-icon {
+  width: 31px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+  color: #bb743a;
+  background: #fff3e8;
+}
+.accident-detail-card.missing .accident-detail-icon {
+  color: #a59072;
+  background: #f7f2ea;
+}
+.accident-detail-card > div {
+  min-width: 0;
+}
+.accident-detail-card > div > span,
+.accident-detail-card strong,
+.accident-detail-card small {
+  display: block;
+}
+.accident-detail-card > div > span {
+  color: #929eb0;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+.accident-detail-card strong {
+  margin-top: 6px;
+  overflow: hidden;
+  color: #34445f;
+  font-size: 12px;
+  line-height: 1.45;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.accident-detail-card small {
+  margin-top: 5px;
+  color: #a0aabb;
+  font-size: 10px;
+  line-height: 1.4;
+}
+.accident-narrative {
+  margin-top: 17px;
+}
+.accident-card {
+  padding: 22px 24px;
+  border: 1px solid var(--accident-line);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 3px 12px #26395406;
+}
+.accident-section-heading {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 11px;
+}
+.accident-section-heading h2 {
+  margin-top: 2px;
+  color: var(--accident-ink);
+  font-size: 16px;
+  line-height: 1.35;
+  letter-spacing: -0.3px;
+}
+.accident-section-icon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+}
+.accident-section-icon.blue {
+  color: #5875d8;
+  background: #eef2ff;
+}
+.accident-section-icon.purple {
+  color: #806eb2;
+  background: #f3effb;
+}
+.accident-section-icon.green {
+  color: #4a8b70;
+  background: #edf8f3;
+}
+.accident-narrative-body {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #edf0f5;
+}
+.accident-narrative blockquote {
+  position: relative;
+  margin: 0;
+  padding: 1px 0 1px 17px;
+  border-left: 3px solid #e6a468;
+  color: #34465f;
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  font-weight: 650;
+}
+.accident-narrative-body > p {
+  max-width: 650px;
+  margin-top: 13px;
+  color: #8b97aa;
+  font-size: 11px;
+  line-height: 1.7;
+}
+.accident-narrative-body > button,
+.accident-chronology > li > button {
+  border: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #5e78c8;
+  background: transparent;
+  font-size: 11px;
+  font-weight: 650;
+}
+.accident-narrative-body > button {
+  margin-top: 15px;
+}
+.accident-narrative-body > button:hover,
+.accident-chronology > li > button:hover {
+  color: #3557c5;
+}
+.accident-chronology-card,
+.accident-evidence-card {
+  margin-top: 17px;
+}
+.accident-chronology {
+  margin: 19px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.accident-chronology > li {
+  position: relative;
+  min-height: 65px;
+  display: grid;
+  grid-template-columns: 38px 72px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+}
+.accident-chronology > li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: calc(100% - 31px);
+  left: 18px;
+  top: 48px;
+  background: #e1e6ee;
+}
+.accident-chronology-marker {
+  position: relative;
+  z-index: 1;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e0e6ef;
+  border-radius: 50%;
+  color: #8a97aa;
+  background: #f9fafc;
+}
+.accident-chronology-marker > span {
+  font-size: 10px;
+  font-weight: 700;
+}
+.accident-chronology > li.incident .accident-chronology-marker {
+  border-color: #e5a468;
+  color: #ae672e;
+  background: #fff2e6;
+  box-shadow: 0 0 0 4px #e5a46812;
+}
+.accident-chronology time {
+  color: #8592a6;
+  font-size: 11px;
+  font-weight: 650;
+}
+.accident-chronology-copy {
+  min-width: 0;
+}
+.accident-chronology-copy strong,
+.accident-chronology-copy span {
+  display: block;
+}
+.accident-chronology-copy strong {
+  overflow: hidden;
+  color: #40516b;
+  font-size: 12px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.accident-chronology-copy span {
+  margin-top: 3px;
+  color: #9ba6b7;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+.accident-evidence-count {
+  color: #8a96a9;
+  font-size: 11px;
+}
+.accident-evidence-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+.accident-evidence-list > button {
+  min-width: 0;
+  min-height: 70px;
+  padding: 12px 13px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid #e6eaf1;
+  border-radius: 9px;
+  text-align: left;
+  background: #fbfcfe;
+}
+.accident-evidence-list > button:hover {
+  border-color: #cbd6ee;
+  background: #f7f9fe;
+  box-shadow: 0 3px 10px #344b7209;
+}
+.accident-evidence-type {
+  padding: 4px 6px;
+  border-radius: 5px;
+  color: #6d83b8;
+  background: #edf2ff;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.accident-evidence-list > button > span:nth-child(2) {
+  min-width: 0;
+}
+.accident-evidence-list strong,
+.accident-evidence-list small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.accident-evidence-list strong {
+  color: #43536c;
+  font-size: 11px;
+  font-weight: 700;
+}
+.accident-evidence-list small {
+  margin-top: 4px;
+  color: #98a3b4;
+  font-size: 10px;
+}
+.accident-evidence-list > button > svg {
+  color: #8495b4;
+}
+.accident-empty {
+  margin-top: 18px;
+  padding: 19px;
+  border: 1px dashed #dfe5ef;
+  border-radius: 8px;
+  color: #96a1b2;
+  text-align: center;
+  font-size: 11px;
+}
+@media (max-width: 980px) {
+  .accident-detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 700px) {
+  .accident-hero {
+    grid-template-columns: auto minmax(0, 1fr);
+    padding: 23px 20px;
+  }
+  .accident-hero h2 {
+    font-size: 22px;
+    white-space: normal;
+  }
+  .accident-hero-date {
+    grid-column: 1 / 3;
+    width: 100%;
+  }
+  .accident-card {
+    padding: 19px 18px;
+  }
+  .accident-evidence-list {
+    grid-template-columns: 1fr;
+  }
+  .accident-chronology > li {
+    grid-template-columns: 38px 58px minmax(0, 1fr);
+  }
+  .accident-chronology > li > button {
+    grid-column: 3;
+    justify-self: start;
+    margin-top: -8px;
+    padding-bottom: 7px;
+  }
+}
+@media (max-width: 480px) {
+  .accident-detail-grid {
+    grid-template-columns: 1fr;
+  }
+  .accident-detail-card {
+    min-height: 0;
+  }
+  .accident-section-heading {
+    align-items: flex-start;
+  }
+  .accident-evidence-count {
+    display: none;
+  }
+  .accident-chronology > li {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 8px 11px;
+    padding: 9px 0;
+  }
+  .accident-chronology time,
+  .accident-chronology-copy,
+  .accident-chronology > li > button {
+    grid-column: 2;
+  }
+  .accident-chronology time {
+    align-self: end;
+  }
+  .accident-chronology-copy {
+    margin-top: -6px;
+  }
+  .accident-chronology > li > button {
+    margin-top: 0;
+  }
+}

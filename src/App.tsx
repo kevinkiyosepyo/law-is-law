@@ -11,6 +11,7 @@ import {
   ArrowLeft,
   ArrowRight,
   ArrowUpRight,
+  Car,
   Check,
   CheckCircle2,
   ChevronDown,
@@ -49,10 +50,21 @@ import type {
   ProviderShare,
   SourceRecord,
 } from "../shared/types";
+import AccidentOverview from "./components/AccidentOverview";
+import CaseHealth from "./components/CaseHealth";
 
-type View = "overview" | "waiting" | "evidence" | "sharing" | "connection";
+type View =
+  | "overview"
+  | "accident"
+  | "casehealth"
+  | "waiting"
+  | "evidence"
+  | "sharing"
+  | "connection";
 const viewNames: Record<View, string> = {
   overview: "Matter overview",
+  accident: "Accident",
+  casehealth: "Case Health",
   waiting: "Waiting Room",
   evidence: "Evidence library",
   sharing: "Provider sharing",
@@ -494,6 +506,8 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
   }
   const nav = [
     { id: "overview" as View, label: "Overview", icon: LayoutDashboard },
+    { id: "accident" as View, label: "Accident", icon: Car },
+    { id: "casehealth" as View, label: "Case Health", icon: Activity },
     { id: "waiting" as View, label: "Waiting Room", icon: Clock3 },
     { id: "evidence" as View, label: "Evidence", icon: FileText },
     { id: "sharing" as View, label: "Provider sharing", icon: Users },
@@ -615,13 +629,17 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
               <p>
                 {view === "overview"
                   ? "The full picture. The open questions. Your next move."
-                  : view === "waiting"
-                    ? "Know who you are waiting on, and what to do next."
-                    : view === "evidence"
-                      ? "The source material behind your case, all in one place."
-                      : view === "sharing"
-                        ? "Give each provider a clear, attorney-approved view."
-                        : "Bring your case records together, on your terms."}
+                  : view === "accident"
+                    ? "When it happened, how it happened, and what the records support."
+                    : view === "casehealth"
+                      ? "Your case essentials, risks, and next moves in 90 seconds."
+                      : view === "waiting"
+                        ? "Know who you are waiting on, and what to do next."
+                        : view === "evidence"
+                          ? "The source material behind your case, all in one place."
+                          : view === "sharing"
+                            ? "Give each provider a clear, attorney-approved view."
+                            : "Bring your case records together, on your terms."}
               </p>
             </div>
             <button
@@ -632,7 +650,7 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
               Import matter
             </button>
           </div>
-          {view !== "connection" && (
+          {view !== "connection" && view !== "casehealth" && (
             <div className="matter-bar">
               <div className="matter-select-wrap">
                 <div className="matter-avatar">
@@ -695,6 +713,23 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
                 );
               }}
             />
+          ) : view === "casehealth" ? (
+            loading ? (
+              <Busy label="Preparing case health…" />
+            ) : !matter ? (
+              <div className="panel">
+                <Empty title="Select a matter to review case health">
+                  Import a matter to see its priorities, recent changes, and
+                  treatment progress.
+                </Empty>
+              </div>
+            ) : (
+              <CaseHealth
+                matter={matter}
+                onOpenSource={setSource}
+                onProviderView={() => navigate("sharing")}
+              />
+            )
           ) : loading ? (
             <Busy label="Reading matter records…" />
           ) : !matter ? (
@@ -730,6 +765,9 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
                   onSource={setSource}
                   onNavigate={navigate}
                 />
+              )}
+              {view === "accident" && (
+                <AccidentOverview matter={matter} onOpenSource={setSource} />
               )}
               {view === "waiting" && (
                 <WaitingRoom matter={matter} onSource={setSource} />
