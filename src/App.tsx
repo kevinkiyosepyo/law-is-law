@@ -54,13 +54,13 @@ import type {
 
 import { shortSummary } from "../shared/short-summary";
 import { InjuryMap } from "./InjuryMap";
+import AccidentOverview from "./accident/AccidentOverview";
 import { Finances } from "./Finances";
 import { MyChart } from "./MyChart";
 import { emptyChartSession, type ChartSession } from "../shared/mychart";
 import { AllCases, ImportMatterDialog, type DemoMatter } from "./AllCases";
 import {
   Integrations,
-  StatusUpdatesPreview,
   UpdateDialog,
   sampleDemoEmail,
   sampleDemoEmails,
@@ -72,6 +72,7 @@ import {
 
 type View =
   | "overview"
+  | "accident"
   | "cases"
   | "waiting"
   | "evidence"
@@ -82,6 +83,7 @@ type View =
   | "connection";
 const viewNames: Record<View, string> = {
   overview: "Matter overview",
+  accident: "Accident overview",
   cases: "All Cases",
   waiting: "Waiting Room",
   evidence: "Evidence library",
@@ -548,13 +550,14 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
   }
   const nav = [
     { id: "overview" as View, label: "Overview", icon: LayoutDashboard },
+    { id: "accident" as View, label: "Accident overview", icon: FolderOpen },
     { id: "waiting" as View, label: "Waiting Room", icon: Clock3 },
     { id: "evidence" as View, label: "Evidence", icon: FileText },
     { id: "finances" as View, label: "Finances", icon: Wallet },
-    { id: "mychart" as View, label: "MyChart", icon: Activity },
     { id: "sharing" as View, label: "Provider sharing", icon: Users },
     { id: "integrations" as View, label: "Integrations", icon: Mail },
     { id: "cases" as View, label: "All Cases", icon: FolderOpen },
+    { id: "mychart" as View, label: "MyChart", icon: Activity },
   ];
   return (
     <div className="app-shell">
@@ -652,7 +655,11 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
                 }}
               />
             </div>
-            <button type="button" className="readonly-label">
+            <button
+              type="button"
+              className="readonly-label"
+              onClick={() => window.open("https://www.canva.com/photos/s/cat/", "_blank", "noopener,noreferrer")}
+            >
               <LockKeyhole size={13} /> Read-only case data
             </button>
           </div>
@@ -677,6 +684,8 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
                 <p>
                   {view === "overview"
                     ? "Review open requests and see what needs attention."
+                    : view === "accident"
+                      ? "Review the incident, its chronology, and the supporting records."
                     : view === "cases"
                       ? "(Attorney / Lawyer view only)"
                     : view === "waiting"
@@ -839,15 +848,6 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
                 </div>
               )}
               {view === "overview" && (
-                <StatusUpdatesPreview
-                  check={demoCheck}
-                  email={demoEmail}
-                  outcome={demoOutcome}
-                  onOpenUpdate={() => setShowUpdateDialog(true)}
-                  onOpenIntegrations={() => navigate("integrations")}
-                />
-              )}
-              {view === "overview" && (
                 <Overview
                   matter={matter}
                   onSource={setSource}
@@ -856,6 +856,9 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
               )}
               {view === "waiting" && (
                 <WaitingRoom matter={matter} onSource={setSource} />
+              )}
+              {view === "accident" && (
+                <AccidentOverview matter={matter} onOpenSource={setSource} />
               )}
               {view === "evidence" && (
                 <Evidence
@@ -2303,7 +2306,7 @@ function Connection({
             <small>
               {text
                 ? "Choose another file, or edit the text below"
-                : "or click to browse · TXT, JSON, MD, CSV · up to 5 MB"}
+                : "or click to browse · TXT, JSON, MD, CSV · up to 5 MB · ZIP files in All Cases"}
             </small>
           </button>
           <label className="field-label" htmlFor="import-text">

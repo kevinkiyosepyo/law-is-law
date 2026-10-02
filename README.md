@@ -6,7 +6,7 @@ The app answers: "What is stopping this case from moving forward, who are we wai
 
 Choose a matter to see its bottlenecks, reported injuries, recent activity, and supporting records. Attorneys can also review medical finances and create a provider view containing only the information they approve.
 
-This is a local demo. It works with fictional sample matters without Clio credentials. The Clio connector is implemented but needs account-specific verification; the ChatGPT, Gmail, and Slack integration screens are simulations.
+This is a local demo. It works with fictional sample matters without Clio credentials. The Clio connector is implemented but needs account-specific verification; the ChatGPT, Gmail, Slack, and MyChart integration screens are simulations.
 
 ## Run locally
 
@@ -59,7 +59,7 @@ The built-in hospital email is fictional and is labeled as such. To present an a
 
 Open **MyChart** in the sidebar or its card under **Integrations**. Select **Kevin Pyo - Car Crash** for the fullest walkthrough, then **Preview connection**, acknowledge the fictional demo, and **Load demo records**. The six-item feed includes medical summaries, a provider message, a tentative appointment, a hospital statement, and a notification-only example. Clinical and billing examples link to related case sources; no records are actually fetched from MyChart and the fictional providers are not represented as MyChart participants.
 
-Search or filter the feed, inspect a record, select individual items, and acknowledge review before **Add to attorney preview**. Switch to **Attorney preview** to see only those items. Notification-only emails cannot be included as medical records. Remove an item from the patient preview to remove it from the attorney packet. These are UI perspectives, not authenticated patient/attorney roles, actual patient consent, or real delivery.
+Search or filter the feed, inspect a record, select individual items, and acknowledge review before **Add to attorney preview**. Switch to **Attorney preview** to see only those items. Notification-only emails cannot be included as medical records. In the patient view, use **Remove from attorney preview** to remove an item from the packet without deleting the record. These are UI perspectives, not authenticated patient/attorney roles, actual patient consent, or real delivery.
 
 **Add record text** accepts fictional or de-identified pasted content, with provider, title, date, and record type. Records and selections are isolated by matter in browser memory, survive in-app navigation, and clear on page refresh or sign-out. Disconnecting the simulated portal retains existing preview records. Nothing is sent to an AI service or app server, saved into evidence/finances, or disclosed to another user. Imported/Clio matters do not get fictional portal records; they support the text preview only. Other sample matters use their own recorded treatment excerpt rather than Kevin's clinical story.
 

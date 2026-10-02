@@ -1,0 +1,42 @@
+.accident-dashboard { display: grid; gap: 22px; }
+.accident-hero { display: flex; align-items: center; gap: 20px; background: #172b50; color: white; padding: 28px; border-radius: 12px; }
+.accident-hero-icon { padding: 16px; background: #ffffff15; border-radius: 12px; }
+.accident-hero-copy { flex: 1; min-width: 0; }
+.accident-hero h2 { font-size: 22px; line-height: 1.5; margin: 8px 0; }
+.accident-hero p, .accident-hero-date { color: #cad5e9; font-size: 14px; }
+.accident-hero-date { display: grid; gap: 7px; min-width: 120px; }
+.accident-kicker { font-size: 11px; letter-spacing: 1.3px; font-weight: 700; }
+.accident-detail-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.accident-detail-card, .accident-card { background: white; border: 1px solid #e3e8f1; border-radius: 10px; overflow: hidden; }
+.accident-detail-card { display: flex; gap: 12px; padding: 20px; }
+.accident-detail-card > div { display: grid; align-content: start; gap: 9px; min-width: 0; }
+.accident-detail-card span, .accident-detail-card small { color: #798aa5; font-size: 12px; }
+.accident-detail-card strong { font-size: 14px; line-height: 1.6; overflow-wrap: anywhere; }
+.accident-detail-icon { color: #4c68d8 !important; }
+.accident-detail-card.missing { background: #fafbfe; }
+.accident-section-heading { display: flex; align-items: center; gap: 12px; padding: 22px; border-bottom: 1px solid #edf0f6; }
+.accident-section-heading h2 { font-size: 17px; margin-top: 5px; }
+.accident-section-heading .accident-kicker { color: #8798b0; }
+.accident-section-icon { padding: 10px; border-radius: 9px; background: #eef2ff; color: #5066c9; }
+.accident-section-icon.purple { color: #9367b9; background: #f6f0ff; }
+.accident-section-icon.green { color: #38836b; background: #edf8f3; }
+.accident-narrative-body, .accident-empty { padding: 22px; line-height: 1.8; font-size: 14px; }
+.accident-narrative-body blockquote { margin: 0 0 12px; border-left: 3px solid #5266da; padding-left: 16px; }
+.accident-narrative-body p { color: #7c8ba3; margin-bottom: 12px; }
+.accident-dashboard button { display: inline-flex; align-items: center; gap: 8px; color: #4560c9; background: none; border: 0; cursor: pointer; font: inherit; font-size: 13px; }
+.accident-dashboard button:focus-visible { outline: 2px solid #5266da; outline-offset: 3px; }
+.accident-chronology { list-style: none; padding: 10px 22px; margin: 0; }
+.accident-chronology li { display: grid; grid-template-columns: 32px 80px minmax(0, 1fr) auto; align-items: center; gap: 14px; padding: 17px 0; border-bottom: 1px solid #edf0f6; }
+.accident-chronology li:last-child { border-bottom: 0; }
+.accident-chronology-marker span { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #eef2ff; color: #5266da; font-size: 12px; }
+.accident-chronology time { color: #8291a8; font-size: 12px; }
+.accident-chronology-copy { display: grid; gap: 6px; font-size: 14px; line-height: 1.5; }
+.accident-chronology-copy span { color: #8798b0; font-size: 12px; }
+.accident-evidence-count { margin-left: auto; font-size: 12px; color: #8798b0; }
+.accident-evidence-list { display: grid; padding: 0 22px; }
+.accident-evidence-list button { padding: 18px 0; text-align: left; width: 100%; border-bottom: 1px solid #edf0f6; }
+.accident-evidence-list button > span:nth-child(2) { display: grid; gap: 7px; flex: 1; min-width: 0; }
+.accident-evidence-list small { color: #8798b0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.accident-evidence-type { padding: 6px; background: #f3f5fa; border-radius: 5px; font-size: 11px; }
+@media (max-width: 1100px) { .accident-detail-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .accident-hero { flex-wrap: wrap; padding: 20px; } .accident-hero-date { width: 100%; } .accident-detail-grid { grid-template-columns: 1fr; } .accident-chronology li { grid-template-columns: 30px minmax(0, 1fr); } .accident-chronology-copy { grid-column: 2; } .accident-chronology li button { grid-column: 2; } }
