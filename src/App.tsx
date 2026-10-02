@@ -11,6 +11,7 @@ import {
   ArrowLeft,
   ArrowRight,
   ArrowUpRight,
+  Car,
   Check,
   CheckCircle2,
   ChevronDown,
@@ -49,10 +50,18 @@ import type {
   ProviderShare,
   SourceRecord,
 } from "../shared/types";
+import AccidentOverview from "./components/AccidentOverview";
 
-type View = "overview" | "waiting" | "evidence" | "sharing" | "connection";
+type View =
+  | "overview"
+  | "accident"
+  | "waiting"
+  | "evidence"
+  | "sharing"
+  | "connection";
 const viewNames: Record<View, string> = {
   overview: "Matter overview",
+  accident: "Accident",
   waiting: "Waiting Room",
   evidence: "Evidence library",
   sharing: "Provider sharing",
@@ -494,6 +503,7 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
   }
   const nav = [
     { id: "overview" as View, label: "Overview", icon: LayoutDashboard },
+    { id: "accident" as View, label: "Accident", icon: Car },
     { id: "waiting" as View, label: "Waiting Room", icon: Clock3 },
     { id: "evidence" as View, label: "Evidence", icon: FileText },
     { id: "sharing" as View, label: "Provider sharing", icon: Users },
@@ -615,13 +625,15 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
               <p>
                 {view === "overview"
                   ? "The full picture. The open questions. Your next move."
-                  : view === "waiting"
-                    ? "Know who you are waiting on, and what to do next."
-                    : view === "evidence"
-                      ? "The source material behind your case, all in one place."
-                      : view === "sharing"
-                        ? "Give each provider a clear, attorney-approved view."
-                        : "Bring your case records together, on your terms."}
+                  : view === "accident"
+                    ? "When it happened, how it happened, and what the records support."
+                    : view === "waiting"
+                      ? "Know who you are waiting on, and what to do next."
+                      : view === "evidence"
+                        ? "The source material behind your case, all in one place."
+                        : view === "sharing"
+                          ? "Give each provider a clear, attorney-approved view."
+                          : "Bring your case records together, on your terms."}
               </p>
             </div>
             <button
@@ -730,6 +742,9 @@ function Workspace({ onLogout }: { onLogout: () => Promise<void> }) {
                   onSource={setSource}
                   onNavigate={navigate}
                 />
+              )}
+              {view === "accident" && (
+                <AccidentOverview matter={matter} onOpenSource={setSource} />
               )}
               {view === "waiting" && (
                 <WaitingRoom matter={matter} onSource={setSource} />
